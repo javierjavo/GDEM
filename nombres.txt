@@ -1,0 +1,22 @@
+CEDEMI
+Centro didactico de estudios para migrantes e inmigrantes
+
+nom camello
+
+
+obj
+loginStatus.php => lsts
+logOut.php      => lout
+
+page
+index.php
+    lsts
+        lout
+        
+        
+        
+        
+
+0.1.0 def logica
+
+1.0.0 pasamos dario
