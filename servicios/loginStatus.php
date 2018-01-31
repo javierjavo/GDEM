@@ -2,6 +2,10 @@
     //error_reporting(0);
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
     session_start();
+    if($_SESSION['errorLogin']!=NULL){
+        echo '<script language="javascript">alert("'.$_SESSION['errorLogin'].'");</script>';
+        unset($_SESSION['errorLogin']);
+    }
     if($_SESSION['usr']==NULL){
         echo'<div class="collapse show bg-light" id="navbarHeader" style="">
         <div class="container-fluid">
@@ -31,5 +35,9 @@
             <a class="menuOp" href="./servicios/logout.php">logout</a>
         </div>
     </div>';
+    }
+
+    if(isset($_GET['sts'])){
+        echo $_GET['sts'];
     }
 ?>
