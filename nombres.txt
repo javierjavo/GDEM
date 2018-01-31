@@ -1,22 +1,40 @@
 CEDEMI
 Centro didactico de estudios para migrantes e inmigrantes
 
-nom camello
+nomenclatura camello
 
 
-obj
-loginStatus.php => lsts
-logOut.php      => lout
 
-page
+comportamiento
+index.js        => JS        => comportamiento de la pagina logion y temas objetos
+
+
+
+servicios:
+logOut.php      => Slout     => DESTRUYE LAS SESIONES DE USUARIO ACTUALES SOLO MANTENIENDO LA DE IDIOMA
+lenguaje.php    => Slang     => SELECCIONA EL LENGUAJE POR DEFECTO A USAR
+
+
+objetos:
+loginStatus.php => Olsts     => INICIA VALIDA Y CREA LA SESION DE USUARIO ACTUAL CARGANDOLA EN CACHE imprimiendo las vistas y menu
+pie.php         => Opie      => pie de pagina para modificar
+header.php      => Ohead     => el header y menu de todas las paginas exepto index
+
+
+
+paginas:
 index.php
-    lsts
-        lout
+    Slang
+    Olsts
+        Slout
+    Opie
+        js
+    
+home.php
+    Slang
+    Ohead
+        Olsts
+            Slout
+    Opie
+        js
         
-        
-        
-        
-
-0.1.0 def logica
-
-1.0.0 pasamos dario

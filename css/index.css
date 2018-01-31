@@ -1,3 +1,9 @@
+.fondoHome{
+    min-height: 400px; 
+    background-size:cover; 
+    background: url('../media/together.jpg') no-repeat center center fixed; 
+    height: 50%;
+}
 .cetiLogo{
     border-radius: 40px;
 }
