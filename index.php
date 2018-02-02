@@ -7,6 +7,7 @@
      <!-- Bootstrap CSS -->
     <?php 
         include "servicios/lenguaje.php";
+        initStyles();
     ?>
 </head>
 <body class="fondoHome">
@@ -26,14 +27,14 @@
        </div>
        <div class="col-sm-2">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-            <span >Mostrar / Ocultar</span>
+            <span class="textoDinamico">Mostrar / Ocultar</span>
         </button>
        </div>
     </nav>
     <!--Barra de seguimiento dentro del portal-->
     <nav aria-label="breadcrumb" role="navigation" class="bg-light">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Bienvenida/welcome</li>
+        <li class="breadcrumb-item active textoDinamico" aria-current="page">Bienvenida/welcome</li>
       </ol>
     </nav>
    	</header>
@@ -51,7 +52,9 @@
 		</section>
 	</main>
       <!--Footer de la pagina -->
-    <?php 
+      
+    <?php
+        loadTxt("index");
         include "objetos/pie.php";
     ?>
 </body>
