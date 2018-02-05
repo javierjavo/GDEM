@@ -11,14 +11,17 @@ index.js        => JS        => comportamiento de la pagina logion y temas objet
 
 
 servicios:
-logOut.php      => Slout     => DESTRUYE LAS SESIONES DE USUARIO ACTUALES SOLO MANTENIENDO LA DE IDIOMA
-lenguaje.php    => Slang     => SELECCIONA EL LENGUAJE POR DEFECTO A USAR
+    logOut.php      => Slout     => DESTRUYE LAS SESIONES DE USUARIO ACTUALES SOLO MANTENIENDO LA DE IDIOMA
+    lenguaje.php    => Slang     => SELECCIONA EL LENGUAJE POR DEFECTO A USAR
 
 
 objetos:
-loginStatus.php => Olsts     => INICIA VALIDA Y CREA LA SESION DE USUARIO ACTUAL CARGANDOLA EN CACHE imprimiendo las vistas y menu
-pie.php         => Opie      => pie de pagina para modificar
-header.php      => Ohead     => el header y menu de todas las paginas exepto index
+    loginStatus.php => Olsts     => {
+                                        INICIA VALIDA Y CREA LA SESION DE USUARIO ACTUAL CARGANDOLA EN CACHE imprimiendo las vistas y menu
+                                        imprime alertas de error
+    }
+    pie.php         => Opie      => pie de pagina para modificar
+    header.php      => Ohead     => el header y menu de todas las paginas exepto index
 
 
 
