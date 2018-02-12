@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-02-2018 a las 04:07:13
+-- Tiempo de generación: 12-02-2018 a las 06:06:19
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -104,6 +104,7 @@ CREATE TABLE `personalinfo` (
   `IDLogin` int(11) NOT NULL,
   `nombre` text NOT NULL,
   `edad` text NOT NULL,
+  `tipousuario` text NOT NULL,
   `escolaridad` text NOT NULL,
   `pais` text NOT NULL,
   `idioma` text NOT NULL
