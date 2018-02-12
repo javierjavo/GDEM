@@ -22,7 +22,7 @@
                 <div class="col-sm-4 py-4 text-center">
                     <h5>¿Ya tienes cuenta? / Do you have an account?</h5>
                     <a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
-                    <a href="pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>
+                    <a href="'.$homeRute.'/pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>
                 </div>
             </div>
         </div>
