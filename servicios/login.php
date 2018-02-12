@@ -16,7 +16,7 @@
                 $_SESSION['id']=$recoger_dato['IDLogin'];
                 header("Location:".$_SERVER['HTTP_REFERER']);
             }else{
-                $_SESSION['errorLogin'] = "Password Incorrecto";
+                $_SESSION['alert'] = "Password Incorrecto";
                 header("Location:".$_SERVER['HTTP_REFERER']);
             }
         }else{

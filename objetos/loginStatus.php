@@ -3,9 +3,9 @@
     //error_reporting(0);
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
     session_start();
-    if($_SESSION['errorLogin']!=NULL){
-        echo '<script language="javascript">alert("'.$_SESSION['errorLogin'].'");</script>';
-        unset($_SESSION['errorLogin']);
+    if($_SESSION['alert']!=NULL){
+        echo '<script language="javascript">alert("'.$_SESSION['alert'].'");</script>';
+        unset($_SESSION['alert']);
     }
     
     if($_SESSION['usr']==NULL){
@@ -22,7 +22,7 @@
                 <div class="col-sm-4 py-4 text-center">
                     <h5>¿Ya tienes cuenta? / Do you have an account?</h5>
                     <a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
-                    <a href="#" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>
+                    <a href="pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>
                 </div>
             </div>
         </div>
