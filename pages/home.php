@@ -21,7 +21,7 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border: 3px;">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" style="max-height:400px;" src="../../Media/board3.jpg" alt="First slide">
+                  <img class="d-block w-100" style="max-height:400px;" src="../Media/board3.jpg" alt="First slide">
                   <div class="carousel-caption d-none d-md-block " style="background-color: rgba(10,10,10,.5);  border-radius: 5px;">
                     <h3>¡Conoce acerca del PROBEM y todo lo que tiene a ofrecer para ti!</h3>
                     <p>La coordinación del PROBEM es la encargada de ofreces y facilitar bajo el sustento de la SEP...</p>
@@ -29,7 +29,7 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" style="max-height:400px;" src="../../Media/board2.jpg" alt="Second slide">
+                  <img class="d-block w-100" style="max-height:400px;" src="../Media/board2.jpg" alt="Second slide">
                   <div class="carousel-caption d-none d-md-block" style="background-color: rgba(10,10,10,.5);  border-radius: 5px;">
                     <h3>¡Adelante llena este formulario y encuentras las respuestas que buscas!</h3>
                     <p>Contesta un pequeño formulario para conocer escuelas cerca de tu domicilio, tramites de tu interes y mas...(descuida no necesitamos datos confidenciales)</p>
@@ -37,7 +37,7 @@
                   </div>              
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" style="max-height:400px;" src="../../Media/board.jpg" alt="Third slide">
+                  <img class="d-block w-100" style="max-height:400px;" src="../Media/board.jpg" alt="Third slide">
                   <div class="carousel-caption d-none d-md-block" style="background-color: rgba(10,10,10,.5);  border-radius: 5px;">
                     <h3>¡Conoce acerca del PROBEM y todo lo que tiene a ofrecer para ti!</h3>
                     <p>La coordinación del PROBEM es la encargada de ofreces y facilitar bajo el sustento de la SEP...</p>

@@ -12,17 +12,46 @@
     echo'<div class="collapse show bg-light" id="navbarHeader" style="">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-2 py-4">
-                  <img class="img-fluid" src="'.$homeRute.'/media/Logo_probem.png" alt="Logo_GDEM">
-                </div>
-                <div class="col-sm-6 py-4">
-                  <h3 class="text-center">GDEM</h3>
-                  <p class="text-center">Guia Digital de Educación al Migrante / National Digital Guide for Migrants</p>  
+                <div class="col-sm-8 py-4">
+                    <div class="row">
+                        <div class="col-sm-6 py-4">
+                            <div class="row">
+                                <div class="col-sm-6 py-4">
+                                    <img class="img-fluid" src="'.$homeRute.'/media/Logo_probem.png" alt="Logo_GDEM">
+                                </div>
+                                <div class="col-sm-6 py-4"> 
+                                    <h3 class="text-center">PROBEMJal</h3>
+                                    <p class="text-center">Programa Binacional de Educación Migrante/ Binational Program for Migrant Education</p>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 py-4"> 
+                            <div class="row">
+                                <div class="col-sm-6 py-4">
+                                    <img class="img-fluid" src="'.$homeRute.'/media/GDEM2.png" alt="Logo_GDEM">
+                                </div>
+                                <div class="col-sm-6 py-4"> 
+                                    <h3 class="text-center">GDEM</h3>
+                                    <p class="text-center">Guia Digital de Educación al Migrante / National Digital Guide for Migrants</p>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-4 py-4 text-center">
-                    <h5>¿Ya tienes cuenta? / Do you have an account?</h5>
-                    <a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
-                    <a href="'.$homeRute.'/pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>
+                    <div class="row">
+                        <div class="col-sm-6 py-4">
+                            <h5> Modo Interactivo - Interactive Mode </h5>
+                            <a href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Activar</a>
+                            <a href="#" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Desactivar</a>  
+                        </div>
+                        <div class="col-sm-6 py-4"> 
+                            <img class="img-fluid" src="'.$homeRute.'/media/niños_lapiz.jpg" alt="Logo_GDEM">
+                            <a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
+                            <a href="pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>  
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

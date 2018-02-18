@@ -18,55 +18,51 @@ include "loginStatus.php";
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home.php">Inicio<span class="sr-only">(current)</span></a>
                       </li>
                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          PROBEM
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                          PROBEMJal
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="probem.html" class="dropdown-header btn">PROBEM</a>
-                          <a class="dropdown-item" href="probem/acerca_probem.html">¿Que es PROBEMJAL?</a>
-                          <a class="dropdown-item" href="probem/historia.html">Historia</a>
-                          <a class="dropdown-item" href="probem/mision_vision.html">Misión y Visión</a>                      
-                          <a class="dropdown-item" href="probem/objetivos.html">Objetivos</a>
+                          <a href="#" class="dropdown-header btn">PROBEM en México</a>
+                          <a class="dropdown-item" href="#">¿Que es PROBEMJAL?</a>
+                          <a class="dropdown-item" href="#">Historia</a>
+                          <a class="dropdown-item" href="#">Objetivos</a>
                         </div>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Tramites
+                          Estudiantes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="tramites.html" class="dropdown-header btn">Tramites</a>
-                          <a class="dropdown-item" href="tramites/maestros.html">Sección de Maestros</a>
-                          <a class="dropdown-item" href="tramites/alumnos.html">Sección de Alumnos</a>
+                          <a href="#" class="dropdown-header btn">Ejes Tematicos</a>
+                          <a class="dropdown-item" href="#">Información y Difusión</a>
+                          <a class="dropdown-item" href="#">Acceso a las Escuelas</a>
+                          <a class="dropdown-item" href="#">Apoyps Educativos</a>
+                          <a class="dropdown-item" href="#">Capacitación e Intercambio</a>
                         </div>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Recursos
+                          Maestros
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="recursos.html" class="dropdown-header btn">Recursos</a>
-                          <a class="dropdown-item" href="recursos/actividades.html">Actividades</a>
-                          <a class="dropdown-item" href="recursos/multimedia.html">Multimedia</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Muro de noticias
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="muro.html" class="dropdown-header btn">Muro de noticias</a>
-                          <a class="dropdown-item" href="muro/maestros.html">Sección de Maestros</a>
-                          <a class="dropdown-item" href="muro/alumnos.html">Sección de Alumnos</a>
+                          <a href="#" class="dropdown-header btn">Ejes Tematicos</a>
+                          <a class="dropdown-item" href="#">Información y Difusión</a>
+                          <a class="dropdown-item" href="#">Acceso a las Escuelas</a>
+                          <a class="dropdown-item" href="#">Apoyps Educativos</a>
+                          <a class="dropdown-item" href="#">Capacitación e Intercambio</a>
                         </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="casos_exito.html">Casos de exito</a>
+                        <a class="nav-link" href="#">Casos de exito</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="contactanos.html">Contactanos</a>
+                        <a class="nav-link" href="#">Directorio PROBEM</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
                       </li>
                     </ul>
                   </div>
@@ -81,7 +77,7 @@ include "loginStatus.php";
             <!--Barra de seguimiento dentro del portal-->
         <nav aria-label="breadcrumb" role="navigation" class="bg-light">
           <ol class="breadcrumb" style="margin-bottom: 0px;">
-            <li class="breadcrumb-item active" aria-current="page"><a href="../index.html">Bienvenido</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="../index.php">Bienvenido</a></li>
             <li class="breadcrumb-item active" aria-current="page">Inicio - Español</li>
           </ol>
         </nav>
