@@ -20,8 +20,9 @@
    	   	<!--Contenido de la pagina-->
 	<main class="contenido" role="main">
 		<section class="container" id="languajes" >
-            <div class="row align-items-center bg-light"  style="min-height: 675px;">
-                <form action="../servicios/insertar.php" class="login" method="post">
+            <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
+               <div class="col-md-auto">
+                   <form action="../servicios/insertar.php" class="login" method="post">
                     <fieldset>
                       <legend>Introduce tu informacion aqui / Enter your information here</legend>
                        <label for="nombre"> Nombre o Pseudonimo / Name or Nickname:
@@ -66,6 +67,7 @@
                         <button class="btn btn-secondary" type="reset" >Limpiar formulario / Clean form</button>       
                     </fieldset>
                 </form>
+               </div>
             </div>
 		</section>
 	</main>
