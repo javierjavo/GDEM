@@ -37,7 +37,7 @@ include "loginStatus.php";
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <a href="#" class="dropdown-header btn">Ejes Tematicos</a>
-                          <a class="dropdown-item" href="#">Información y Difusión</a>
+                          <a class="dropdown-item" href="informacionDifusion.php">Información y Difusión</a>
                           <a class="dropdown-item" href="#">Acceso a las Escuelas</a>
                           <a class="dropdown-item" href="#">Apoyps Educativos</a>
                           <a class="dropdown-item" href="#">Capacitación e Intercambio</a>

@@ -39,11 +39,14 @@
                     <?php 
                         include "../objetos/Contacto.php"
                     ?>
+                    <h1 class="textoDinamico">titulo </h1>                    <h1 class="textoDinamico">titulo </h1>
+
                  </div>
             </section>
         </main>
             <!--Footer de la pagina -->
         <?php
+        loadTxt("historia");
         include"../objetos/pie.php";
         ?>
     </body>
