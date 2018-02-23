@@ -14,6 +14,13 @@
             <?php
                 include"../objetos/header.php";
             ?>
+            <!--Barra de seguimiento dentro del portal-->
+        <nav aria-label="breadcrumb" role="navigation" class="bg-light">
+          <ol class="breadcrumb" style="margin-bottom: 0px;">
+            <li class="breadcrumb-item active" aria-current="page"><a class="textoDinamico" href="../index.php">Bienvenido</a></li>
+            <li class="breadcrumb-item active textoDinamico" aria-current="page">Inicio - Español</li>
+          </ol>
+        </nav>
         </header>
            
             <!--Contenido de la pagina-->
@@ -39,14 +46,13 @@
                     <?php 
                         include "../objetos/Contacto.php"
                     ?>
-                    <h1 class="textoDinamico">titulo </h1>                    <h1 class="textoDinamico">titulo </h1>
 
                  </div>
             </section>
         </main>
             <!--Footer de la pagina -->
         <?php
-        loadTxt("historia");
+        loadTxt("home");
         include"../objetos/pie.php";
         ?>
     </body>
