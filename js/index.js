@@ -20,5 +20,25 @@ $("#loginButton").click(function() {
 $("#sendInformationLogin").click(function() {
     $("#colectUserInfoName").val();
     $("#colectUserInfoPass").val();
-    window.location.href=homeRoute+"/servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();;
+    window.location.href=homeRoute+"/servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();
 });
+
+
+function redirToPage(url){
+    var request = new XMLHttpRequest();  
+    request.open('GET', url, false);  
+    request.send();
+    
+    if (request.status == 404) {  
+        alert("parece que esta no fue encontrada, lo resolveremos lo mas pronto posible");
+        
+        return;
+    }else{
+        alert("okis");
+    }
+    
+    window.location.href = url;
+}
+
+
+

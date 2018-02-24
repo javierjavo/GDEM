@@ -48,7 +48,7 @@
                         <div class="col-sm-6 py-4"> 
                             <img class="img-fluid" src="'.$homeRute.'/media/niños_lapiz.jpg" alt="Logo_GDEM">
                             <a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
-                            <a href="pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>  
+                            <a href="'.$homeRute.'/pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>  
                         </div>
                     </div>
                     
