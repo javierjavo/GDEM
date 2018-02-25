@@ -8,8 +8,7 @@ $resultado->data_seek(0);
 while ($fila = $resultado->fetch_assoc()) {
     $langProbem[]= $fila[$_SESSION['lang']];
 }
-function formularioIngreso (){
-    //agregar librerias de JavaScript para que funcione la wea de codigo de abajo
+
     ?>
     <script type="text/javascript">
     $(document).ready(function(){
@@ -45,16 +44,14 @@ function formularioIngreso (){
                         <div class="field_wrapper">
                             <div>
                                 <input type="text" name="field_name[]" value=""/>
-                                    <a href="javascript:void(0);" class="add_button" title="Add field"><img src="add-icon.png"/>
-                                    </a>
+                                    <a href="javascript:void(0);" class="add_button" title="Add field"><img src="add-icon.png"/></a>
                             </div>
                         </div>
                         <input class="btn btn-primary" name="submit" type="submit" id="boton" value="Guardar" class="boton"/>
-                        <button class="btn btn-secondary" type="reset" >Limpiar formulario / Clean form</button>       
+                          
                     </fieldset>
                 </form>
 ';
-}
 ?>
 
 

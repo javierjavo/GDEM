@@ -18,7 +18,7 @@ echo '
            <div class="col-sm-1"><a href="'.$homeRute.'" class="navbar-brand">GDEM</a></div>
            <div class="col-sm-8 text-center">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+                    
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -65,7 +65,7 @@ echo '
            </div>
            <div class="col-sm-2">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-                <span >'.$langHeader[14].'</span>
+                <span >'.$langHeader[14].' nacho pendejo</span>
             </button>
            </div>
         </nav>

@@ -31,14 +31,29 @@ function redirToPage(url){
     
     if (request.status == 404) {  
         alert("parece que esta no fue encontrada, lo resolveremos lo mas pronto posible");
-        
-        return;
     }else{
         alert("okis");
+        window.location.href = url;
     }
-    
-    window.location.href = url;
 }
 
-
-
+var contpreg=0;
+function addObj(contenedor,elemento){
+    if(elemento==1){
+        //preg
+        elemento = "<div><input class='cPregunta' name='cPregunta[]' type='text' value=''/></div>";
+        $(contenedor).append(elemento);
+    }
+    else{
+        var obj = 'cPregunta'+contpreg;
+        contpreg++;
+        elemento = '<div style="background-color:red; height:300px;">'+
+                        '<button id="'+obj+'">addResp</button>'+
+                    '</div>';
+        $(contenedor).parent().append(elemento);
+        $('#'+obj).click(function(){
+             elemento = "<div><input class='"+obj+"' name='"+obj+"[]' type='text' value=''/></div>";
+            $(this).parent().append(elemento);
+        });
+    }
+}

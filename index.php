@@ -41,9 +41,10 @@
    	
    	<!--Contenido de la pagina-->
 	<main class="contenido" role="main">
-        <a onclick="redirToPage('http://codevelop.260mb.net');"> codevelop.260mb.net</a><br>
+        <a onclick="redirToPage('www.google.com');"> google.com</a><br>
+        <a onclick="redirToPage('codevelop.260mb.net');"> codevelop.260mb.net</a><br>
         <a onclick="redirToPage('index.php');"> index.php</a><br>
-        <a onclick="redirToPage('http://noexiste.php');"> http://noexiste.php</a>
+        <a onclick="redirToPage('noexiste.php');"> http://noexiste.php</a>
 		<section class="container" id="languajes" >
             <div class="row align-items-center" style="min-height: 675px;">
                 <div class="col text-center"><a href="pages/home.php?lang=es" class="btn btn-lg btn-primary btn-lang">Español</a></div>
