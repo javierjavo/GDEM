@@ -25,7 +25,7 @@
     }
 
     $nombre="examen";
-    $idioma=$_SESSION['lang'];
+    $idioma=mysqli_real_escape_string($conexion,$_POST['tipo']);
     $tipoExamen=mysqli_real_escape_string($conexion,$_POST['tipo']);
     $field_values_array = $_REQUEST['field_name'];
     $field_values_array2 = $_REQUEST['field_name2'];
@@ -33,7 +33,7 @@
     
     $idAct=validarIDAct($tipoExamen);
     if($idAct==null){
-        $insertar=mysqli_query($conexion, 'insert into actividades(nombre,tipo,idioma) values ("'.$nombre.'","'.$tipoExamen.'","'.$idioma.'")') or die ('No se puede registrar<br>'.mysqli_error($conexion));
+        $insertar=mysqli_query($conexion, 'insert into actividades(tipo,nombre,idioma) values ("'.$tipo.'","'.$tipoExamen.'","'.$idioma.'")') or die ('No se puede registrar<br>'.mysqli_error($conexion));
     }
         
     $idp=validarIDPregunta($idAct);//ver si existe id de examen y si no, entonces creamos el conjunto de prenguntas
