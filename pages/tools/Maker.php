@@ -27,12 +27,34 @@
         <main class="contenido" role="main">
              <section class="container" id="languajes" >
                  <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
-                    <div id="cPregunta" style="background-color:red; height:300px;">
-                        <button onclick="addObj('#cPregunta',1);">addResp</button>
+                    
+                    <div class="col-xs-12">
+                        <button>Crear examen</button>
+                    </div><br><br>
+                    
+                    <div class="col-xs-12">
+                        <label>Nombre</label>
+                        <input type="text"><br>
+                        <label>Region</label>
+                        <select>
+                          <option value="volvo">M&eacute;xico</option>
+                          <option value="saab">USA</option>
+                        </select>
+                        <button> Crear examen </button>
+                    </div><br><br>
+                    
+                    <div class="col-xs-12">
+                        <div id="cPregunta">
+                            <label>Pregunta</label>
+                            <input id="pregunta" type="text"><br>
+                            <button onclick="addObj('#cPregunta');">añadir respuesta</button>
+                            <button onclick="delObj('#cPregunta');">remover respuesta</button>
+                        </div>
+                            <input onclick="guardarObj(false);" type="button" value="nueva pregunta">
+                            <input onclick="guardarObj(true);" type="button" value="finalizar">
                     </div>
+                    <lavel id="resultado"></lavel>
                  </div>
-                <button onclick="addObj('#cPregunta',2);">addPregs</button>
-                <button onclick="enviar();">enviar</button>
             </section>
         </main>
             <!--Footer de la pagina -->
