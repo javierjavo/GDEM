@@ -34,6 +34,7 @@ echo '
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <a href="#" class="dropdown-header btn">PROBEMJal</a>
                           <a class="dropdown-item" href="/GDEM/pages/quePROBEM.php">'.$langHeader[1].'</a>
+                          <a class="dropdown-item" href="/GDEM/pages/misionVisionPROBEM.php">'.$langHeader[15].'</a>
                           <a class="dropdown-item" href="/GDEM/pages/historiaPROBEM.php">'.$langHeader[2].'</a>
                           <a class="dropdown-item" href="/GDEM/pages/objetivosPROBEM.php">'.$langHeader[3].'</a>
                         </div>
@@ -65,7 +66,7 @@ echo '
            </div>
            <div class="col-sm-2">
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-                <span >'.$langHeader[14].' nacho pendejo</span>
+                <span >'.$langHeader[14].'</span>
             </button>
            </div>
         </nav>

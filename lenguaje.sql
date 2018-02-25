@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-02-2018 a las 18:46:26
+-- Tiempo de generación: 25-02-2018 a las 23:33:07
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -123,7 +123,20 @@ INSERT INTO `lenguaje` (`ID`, `en`, `es`, `page`) VALUES
 (83, 'Schools Access ', 'Acceso a Escuela', 'accesoEscuelas'),
 (84, 'welcome', 'Bienvenido', 'apoyosEducativos'),
 (85, 'Home', 'Inicio', 'apoyosEducativos'),
-(86, 'Education Support', 'Apoyo Adademico', 'apoyosEducativos');
+(86, 'Education Support', 'Apoyo Adademico', 'apoyosEducativos'),
+(87, 'Position', 'Cargo', 'directorio'),
+(88, 'Contact Information', 'Informacion de contacto', 'directorio'),
+(89, 'PROBEM Department Manager Mexico', 'Jefe del departamento PROBEM Mexico', 'directorio'),
+(90, 'PROBEM Department Manager Jalisco', 'Jefe del departamento PROBEM Jalisco', 'directorio'),
+(91, 'PROBEM Department Manager Baja California', 'Jefe del departamento PROBEM Baja California', 'directorio'),
+(92, 'PROBEM Department Manager USA', 'Jefe del departamento PROBEM USA', 'directorio'),
+(93, 'Directory', 'Directorio', 'directorio'),
+(94, 'Contact', 'Contacto', 'contacto'),
+(95, 'Name or Nickname', 'Nombre o Pseudonimo', 'contacto'),
+(96, 'Current state of residence', 'Estado de residencia', 'contacto'),
+(97, 'Comments', 'Comentarios', 'contacto'),
+(98, 'Send Comments', 'Enviar Comentarios', 'contacto'),
+(99, 'Mission & Vision', 'Mision & Vision', 'header');
 
 --
 -- Índices para tablas volcadas
@@ -143,7 +156,7 @@ ALTER TABLE `lenguaje`
 -- AUTO_INCREMENT de la tabla `lenguaje`
 --
 ALTER TABLE `lenguaje`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

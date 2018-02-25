@@ -26,32 +26,55 @@
             <!--Contenido de la pagina-->
         <main class="contenido" role="main">
              <section class="container" id="languajes" >
-                 <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
+                 <div class="row text-center align-items-center bg-light"  style="min-height: 675px;">
+                   
+                    <div class="col-sm-6 py-4">
+                            <img class="img-fluid" src="/GDEM/media/niños_lapiz.jpg" alt="Logo_GDEM">
+                            <a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
+                            <a href="/GDEM/pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>  
+                    </div>
+                    <!-- Formulario Login -->
+                    <div class="fondoFormLoginout inicioIinvisible">
+                        <div id="fondoFormLogin2" class="fondoClickFormLoginin"></div>
+                        <div class="Animatedform">
+                            <label for="user">Usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input id="colectUserInfoName" name="user" type="text"><br>
+                            <label for="pass">Contraseña</label>
+                            <input id="colectUserInfoPass" name="pass" type="password"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input id="sendInformationLogin" class="btn btn-primary" type="button" value="login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input id="cancelFormLogin" class="btn btn-danger" type="button" value="cancel">
+                        </div>
+                    </div>
                     
-                    <div class="col-xs-12">
-                        <button>Crear examen</button>
+                    <div class="col-md-12">
+                        <button class="btn btn-primary">Crear examen</button>
                     </div><br><br>
                     
-                    <div class="col-xs-12">
+                    <div class="col-md-12">
                         <label>Nombre</label>
                         <input type="text"><br>
+                        <label>Tipo</label>
+                        <select>
+                          <option value="tipo1">Examen Basico</option>
+                          <option value="tipo2">Examen con ejercicios practicos</option>
+                        </select><br>
                         <label>Region</label>
                         <select>
                           <option value="volvo">M&eacute;xico</option>
                           <option value="saab">USA</option>
-                        </select>
-                        <button> Crear examen </button>
+                        </select><br>
+                        <button class="btn btn-primary"> Crear examen </button>
                     </div><br><br>
                     
-                    <div class="col-xs-12">
+                    <div class="col-md-12">
                         <div id="cPregunta">
                             <label>Pregunta</label>
                             <input id="pregunta" type="text"><br>
-                            <button onclick="addObj('#cPregunta');">añadir respuesta</button>
-                            <button onclick="delObj('#cPregunta');">remover respuesta</button>
+                            <button class="btn btn-secondary" onclick="addObj('#cPregunta');">añadir respuesta</button>
+                            <button class="btn btn-danger" onclick="delObj('#cPregunta');">remover respuesta</button>
                         </div>
-                            <input onclick="guardarObj(false);" type="button" value="nueva pregunta">
-                            <input onclick="guardarObj(true);" type="button" value="finalizar">
+                            <input class="btn btn-secondary" onclick="guardarObj(false);" type="button" value="nueva pregunta">
+                            <input class="btn btn-success" onclick="guardarObj(true);" type="button" value="finalizar">
                     </div>
                     <lavel id="resultado"></lavel>
                  </div>

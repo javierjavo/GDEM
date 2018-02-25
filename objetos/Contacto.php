@@ -3,29 +3,29 @@ $homeRute = "/GDEM";
 include($_SERVER['DOCUMENT_ROOT'].'/GDEM/servicios/conexion.php');
 session_start();
 $langContacto = [];
-$resultado = $conexion->query("SELECT ".$_SESSION['lang']." FROM lenguaje WHERE page='pie'");
+$resultado = $conexion->query("SELECT ".$_SESSION['lang']." FROM lenguaje WHERE page='contacto'");
 $resultado->data_seek(0);
 while ($fila = $resultado->fetch_assoc()) {
     $langContacto[]= $fila[$_SESSION['lang']];
 }
 echo'
-               <div class="col-md-auto">
+               <div class="col align-self-center">
                    <form action="../servicios/insertar.php" class="login" method="post">
                     <fieldset>
-                      <legend>Contacto</legend>
-                       <label for="nombre"> Nombre o Pseudonimo / Name or Nickname:
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre / Name" autocomplete="on" required>
+                      <legend>'.$langContacto[0].'</legend>
+                       <label for="nombre"> '.$langContacto[1].':
+                        <input type="text" name="nombre" id="nombre" placeholder="'.$langContacto[1].'" autocomplete="on" required>
                         </label>
                         <br>
-                        <label for="estado"> Estado de residencia/Current state of residence:
-                        <input type="text" name="estado" id="estado" placeholder="Estado / State" autocomplete="on" required>
+                        <label for="estado"> '.$langContacto[2].':
+                        <input type="text" name="estado" id="estado" placeholder="'.$langContacto[2].'" autocomplete="on" required>
                         </label>
                         <br>
-                        <label for="comentarios"> Comentarios/Comments:
-                        <input type="text" name="comentarios" id="comentarios" placeholder="Comentarios / Commentarios" autocomplete="on" required>
+                        <label for="comentarios"> '.$langContacto[3].':
+                        <input type="text" name="comentarios" id="comentarios" placeholder="'.$langContacto[3].'" autocomplete="on" required>
                         </label>
                         <br>
-                        <input class="btn btn-primary" name="submit" type="submit" id="boton" value="Enviar Commentarios / Send comments" class="boton" onClick=""/>
+                        <input class="btn btn-primary" name="submit" type="submit" id="boton" value="'.$langContacto[4].'" class="boton" onClick=""/>
                     </fieldset>
                 </form>
                </div>
