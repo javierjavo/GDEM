@@ -28,7 +28,7 @@ function redirToPage(url){
     var request = new XMLHttpRequest();  
     request.open('GET', url, false);  
     request.send();
-    
+    // ver estado del request redyStatus
     if (request.status == 404) {  
         alert("parece que esta no fue encontrada, lo resolveremos lo mas pronto posible");
     }else{
