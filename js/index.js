@@ -23,12 +23,38 @@ $("#sendInformationLogin").click(function() {
     window.location.href=homeRoute+"/servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();
 });
 
+function redirToPageWhitVue(url){
+  // GET /someUrl
+  this.$http.get(url).then(response => {
+    alert("exist");
+    // get body data
+    this.someData = response.body;
+
+  }, response => {
+      alert("not exist");
+    // error callback
+  });
+}
 
 function redirToPage(url){
     var request = new XMLHttpRequest();  
     request.open('GET', url, false);  
     request.send();
     // ver estado del request redyStatus
+    /*
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.4.0"></script>
+        {
+      // GET /someUrl
+      this.$http.get('/someUrl').then(response => {
+
+        // get body data
+        this.someData = response.body;
+
+      }, response => {
+        // error callback
+      });
+    }
+    */
     if (request.status == 404) {  
         alert("parece que esta no fue encontrada, lo resolveremos lo mas pronto posible");
     }else{
