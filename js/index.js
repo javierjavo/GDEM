@@ -23,19 +23,6 @@ $("#sendInformationLogin").click(function() {
     window.location.href=homeRoute+"/servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();
 });
 
-function redirToPageWhitVue(url){
-  // GET /someUrl
-  this.$http.get(url).then(response => {
-    alert("exist");
-    // get body data
-    this.someData = response.body;
-
-  }, response => {
-      alert("not exist");
-    // error callback
-  });
-}
-
 function redirToPage(url){
     var request = new XMLHttpRequest();  
     request.open('GET', url, false);  
