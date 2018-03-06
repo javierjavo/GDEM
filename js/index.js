@@ -84,7 +84,6 @@ function guardarObj(terminar){
         };
         $.ajax({
             data: parametros, //datos que se envian a traves de ajax
-            url: '', //archivo que recibe la peticion
             url: '../servicios/testMkrSrv.php', //archivo que recibe la peticion
             type: 'POST', //método de envio
             beforeSend: function () {
