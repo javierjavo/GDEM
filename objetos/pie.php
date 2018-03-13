@@ -23,6 +23,5 @@ echo'
     <script src="'.$homeRute.'/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.4.0"></script>
     <script src="'.$homeRute.'/js/index.js"></script>
-    
     ';
 ?>
