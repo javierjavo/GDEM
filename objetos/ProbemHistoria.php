@@ -13,8 +13,9 @@ echo'
                <h2> '.$langProbem[0].'</h2>
                  '.$langProbem[1].' 
                </div>
-               <div class="col-md-12">
-                    <img class="img-fluid" src="'.$homeRute.'/media/arrows.jpg" alt="Logo_GDEM">
+               <div class="col-md-12 text-center">
+                    <img class="img-fluid" src="'.$homeRute.'/media/arrows.jpg" alt="Logo_GDEM"><br>
+                    <a href="#" class="btn btn-primary">PROBEM a traves del tiempo</a>
                 </form>
                </div>
     ';

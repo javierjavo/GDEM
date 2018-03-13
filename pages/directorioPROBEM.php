@@ -28,7 +28,7 @@
              <section class="container" id="languajes" >
                  <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
                     <?php 
-                        include "../objetos/EstInfoDifusion.php"
+                        include "../objetos/Directorio.php"
                     ?>
                  </div>
             </section>

@@ -108,3 +108,9 @@
 {
     width: 100%;
 }
+.home_container
+{
+    border: 4px inset;
+    text-align: justify;
+    
+}

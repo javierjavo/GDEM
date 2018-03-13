@@ -35,6 +35,44 @@ echo'
               <td>'.$langDirectorio[5].'</td>
               <td>Tel. 3315952876 Cel. 33144112221</td>
             </tr>
+            <tr>
+              <td>'.$langDirectorio[2].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
+            <thead>
+            <tr>
+              <th>'.$langDirectorio[0].'</th>
+              <th>'.$langDirectorio[1].'</th>
+            </tr>
+          </thead>
+            <tr>
+              <td>'.$langDirectorio[3].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
+            <tr>
+              <td>'.$langDirectorio[4].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
+            <tr>
+              <td>'.$langDirectorio[5].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
+            <tr>
+              <td>'.$langDirectorio[2].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
+            <tr>
+              <td>'.$langDirectorio[3].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
+            <tr>
+              <td>'.$langDirectorio[4].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
+            <tr>
+              <td>'.$langDirectorio[5].'</td>
+              <td>Tel. 3315952876 Cel. 33144112221</td>
+            </tr>
           </tbody>
         </table>
         </div>

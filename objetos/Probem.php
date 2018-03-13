@@ -15,6 +15,7 @@ echo'
                <div class="col-md-6">
                    <h2>'.$langProbem[1].'</h2>
                    <p>'.$langProbem[0].'</p>
+                   <a href="#" class="btn btn-primary">Conoce mas de PROBEMJAL</a>
                </div>
     ';
 ?>

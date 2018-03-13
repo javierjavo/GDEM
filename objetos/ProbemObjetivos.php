@@ -23,6 +23,7 @@ echo'
                   <p> '.$langProbem[6].'</p>
                   <p> '.$langProbem[7].'</p>
                   <p> '.$langProbem[8].'</p>
+                  <a href="#" class="btn btn-primary">Objetivos estatales, locales y federales</a>
                </div>
     ';
 ?>

@@ -9,21 +9,50 @@ while ($fila = $resultado->fetch_assoc()) {
     $langInfoDif[]= $fila[$_SESSION['lang']];
 }
 echo '
-       <div class="col-sm-6">
-            <h2>'.$langInfoDif[0].'</h2>
-            <p>'.$langInfoDif[1].'</p>
-            <p>'.$langInfoDif[2].'</p>
-            <p>'.$langInfoDif[3].'</p>
+       <div class="col-sm-8 text-justify">
+            <h2 class="text-center">'.$langInfoDif[0].'</h2>
+            <div>
+                <p>'.$langInfoDif[1].'</p>
+            </div>
+            <div>
+                <p>'.$langInfoDif[2].'</p>
+            </div>
+            <div>
+                <p>'.$langInfoDif[3].'</p>
+            </div>
+            <div>
             <p>'.$langInfoDif[4].'</p>
-            <p>'.$langInfoDif[5].'</p>
-            <p>'.$langInfoDif[6].'</p>
-            <p>'.$langInfoDif[7].'</p>
-            <p>'.$langInfoDif[8].'</p>
-            <p>'.$langInfoDif[9].'</p>
-            <p>'.$langInfoDif[10].'</p>
-            <p>'.$langInfoDif[11].'</p>
-            <p>'.$langInfoDif[12].'</p>
-            <p>'.$langInfoDif[13].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[5].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[6].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[7].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[8].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[9].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[10].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[11].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[12].'</p>
+                </div>
+                <div>
+                    <p>'.$langInfoDif[13].'</p>
+                </div>
         </div>   
+        <div class="col-sm-4 text-justify">
+                
+        </div>
     '
 ?>

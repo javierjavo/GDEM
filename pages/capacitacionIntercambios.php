@@ -26,7 +26,7 @@
             <!--Contenido de la pagina-->
         <main class="contenido" role="main">
              <section class="container" id="languajes" >
-                 <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
+                 <div class="row align-items-center justify-content-center text-justify bg-light"  style="min-height: 675px;">
                       <?php
                         include '../objetos/EstCapIntercambios.php'
                       ?>
