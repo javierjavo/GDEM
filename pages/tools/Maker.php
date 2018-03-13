@@ -52,16 +52,16 @@
                     
                     <div class="col-md-12">
                         <label>Nombre</label>
-                        <input type="text"><br>
+                        <input type="text" id='name'><br>
                         <label>Tipo</label>
-                        <select>
+                        <select id='tipo'>
                           <option value="tipo1">Examen Basico</option>
                           <option value="tipo2">Examen con ejercicios practicos</option>
                         </select><br>
                         <label>Region</label>
-                        <select>
-                          <option value="volvo">M&eacute;xico</option>
-                          <option value="saab">USA</option>
+                        <select id='region'>
+                          <option value="mx">M&eacute;xico</option>
+                          <option value="usa">USA</option>
                         </select><br>
                         <button class="btn btn-primary"> Crear examen </button>
                     </div><br><br>

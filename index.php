@@ -44,10 +44,6 @@
 	<main class="contenido" role="main">
         
         <a href="servicios/httpsRequest.php?variableHtml=https://www.google.com">https://www.google.com</a><br>
-        <a onclick="redirToPage('codevelop.260mb.net');">www.codevelop.260mb.net</a><br>
-        <a onclick="redirToPage('index.php');">localhost/GDEM/index.php</a><br>
-        <a onclick="redirToPage('noexiste.php');">http://noexiste.php</a>
-        <a onclick="redirToPage('noexiste.php');">holi</a>
 		<section class="container" id="languajes" >
             <div class="row align-items-center" style="min-height: 675px;">
                 <div class="col text-center"><a href="pages/home.php?lang=es" class="btn btn-lg btn-primary btn-lang">Español</a></div>
