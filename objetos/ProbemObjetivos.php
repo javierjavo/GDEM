@@ -12,6 +12,7 @@ echo'
                <div class="col-md-6">
                   <h2> '.$langProbem[0].' </h2>
                   <p> '.$langProbem[2].'</p>
+                  <img class="img-fluid" src="'.$homeRute.'/media/man.jpg" alt="Logo_GDEM">
                   
                </div>
                <div class="col-md-6">

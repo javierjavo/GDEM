@@ -10,7 +10,7 @@
     echo "<html lang='".$_SESSION['lang']."'>";
 
     function initStyles(){
-        echo'<link rel="stylesheet" href="/GDEM/css/index.css"><link rel="stylesheet" href="/GDEM/css/bootstrap.min.css">';
+        echo'<link rel="stylesheet" href="/GDEM/css/index.css"> <link rel="stylesheet" href="/GDEM/css/bootstrap.min.css">';
     }
     
     function loadTxt($pagina){

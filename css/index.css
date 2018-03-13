@@ -84,3 +84,27 @@
         left: -100%;
     }
 }
+.probem {
+    width: 700px; 
+    
+}
+.contacto {
+    background-color: dimgrey;
+}
+.header_logoGDEM
+{
+    width: 100px;
+}
+.header_signin 
+{
+    width: 200px;
+    border-radius: 5px;
+}
+.header_chart
+{
+    padding: 0px;
+}
+.tabla_dir
+{
+    width: 100%;
+}

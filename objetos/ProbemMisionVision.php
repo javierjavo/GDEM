@@ -14,7 +14,7 @@ echo'
                    <p> '. $langProbem[1] . $langProbem[2] . $langProbem[3] .$langProbem[4] .' </p>
                </div>
                <div class="col-md-4">
-                   Esta es una imagen :P
+                   <img class="img-fluid" src="'.$homeRute.'/media/choice.jpg" alt="Logo_GDEM">
                </div>
                <div class="col-md-4">
                    <h2>' . $langProbem[5] . '</h2>

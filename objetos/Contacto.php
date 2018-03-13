@@ -9,7 +9,7 @@ while ($fila = $resultado->fetch_assoc()) {
     $langContacto[]= $fila[$_SESSION['lang']];
 }
 echo'
-               <div class="col align-self-center">
+               <div class="col-md-12 text-center contacto">
                    <form action="../servicios/insertar.php" class="login" method="post">
                     <fieldset>
                       <legend>'.$langContacto[0].'</legend>

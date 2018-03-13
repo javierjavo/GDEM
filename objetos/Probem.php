@@ -10,7 +10,7 @@ while ($fila = $resultado->fetch_assoc()) {
 }
 echo'
                <div class="col-md-6">
-                   Esta es una imagen :P
+                   <img class="img-fluid" src="'.$homeRute.'/media/organization-chart.jpg" alt="Logo_GDEM">
                </div>
                <div class="col-md-6">
                    <h2>'.$langProbem[1].'</h2>

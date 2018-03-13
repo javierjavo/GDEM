@@ -9,9 +9,9 @@ while ($fila = $resultado->fetch_assoc()) {
     $langDirectorio[]= $fila[$_SESSION['lang']];
 }
 echo'
-        <div class="col align-self-center">
+        <div class="col-md-12 align-items-center justify-content-center text-center">
         <legend class="text-center">'.$langDirectorio[6].'</legend>
-        <table class="text-center">
+        <table class="tabla_dir">
           <thead>
             <tr>
               <th>'.$langDirectorio[0].'</th>

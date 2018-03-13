@@ -14,7 +14,7 @@ echo'
                  '.$langProbem[1].' 
                </div>
                <div class="col-md-12">
-                   Esta es una imagen :P
+                    <img class="img-fluid" src="'.$homeRute.'/media/arrows.jpg" alt="Logo_GDEM">
                 </form>
                </div>
     ';

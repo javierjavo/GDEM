@@ -13,7 +13,7 @@ echo '
        <!-- Barra de navegación principal-->
         <nav class="navbar navbar-light bg-light">
             <div class="col-sm-1 py-4">
-                <img class="img-fluid" src="'.$homeRute.'/Media/Logo_probem.png" alt="Logo_GDEM">
+                <img class="img-fluid probem" src="'.$homeRute.'/Media/Logo_probem.png" alt="Logo_GDEM">
             </div>
            <div class="col-sm-1"><a href="'.$homeRute.'" class="navbar-brand">GDEM</a></div>
            <div class="col-sm-8 text-center">
