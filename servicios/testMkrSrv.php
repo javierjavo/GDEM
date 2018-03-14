@@ -12,7 +12,7 @@
 
     function validarIDPregunta($IDAct){
         include 'conexion.php';
-        $consulta_a_la_base=mysqli_query($conexion,'select IDPregunta from preguntas where ="'.$IDAct.'"');
+        $consulta_a_la_base=mysqli_query($conexion,'select IDPregunta from preguntaspreguntasOcultar where ="'.$IDAct.'"');
         $recoger_dato=mysqli_fetch_assoc($consulta_a_la_base);
         return $recoger_dato['IDPregunta'];
     }
@@ -47,7 +47,7 @@
                         $respuesta_indice = $field_values_array2[$y];
                         $respuesta = preg_split("|", $respuesta_indice);
                         if ($respuesta[0] == $i){
-                            $insertar2=mysqli_query($conexion, 'insert into preguntas(IDPregunta,textoRespuesta,valor) values("'.$idp.'","'.$respuesta[1].'")') or die ('No se puede registrar<br>'.mysqli_error($conexion));
+                            $insertar2=mysqli_query($conexion, 'insert into respuestas(IDPregunta,textoRespuesta,valor) values("'.$idp.'","'.$respuesta[1].'",TRUE)') or die ('No se puede registrar<br>'.mysqli_error($conexion));
                         }
                         
                 }

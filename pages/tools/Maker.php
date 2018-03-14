@@ -52,7 +52,7 @@
                     
                     <div class="col-md-12">
                         <label>Nombre</label>
-                        <input type="text" id='name'><br>
+                        <input type="text" id='actname'><br>
                         <label>Tipo</label>
                         <select id='tipo'>
                           <option value="tipo1">Examen Basico</option>

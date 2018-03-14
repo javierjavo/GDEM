@@ -25,6 +25,7 @@ $("#sendInformationLogin").click(function() {
 
 
 var contresp=0;
+var contpreg=0;
 var preg = [];
 var resp = new Array();
 var cont_pregunta = 0;
@@ -42,6 +43,7 @@ function delObj(contenedor){
 
 function guardarObj(terminar){
     //aqui es donde se guarda la pregunta con ajax
+	
     preg.push(document.getElementById("pregunta").value);
     r = document.getElementsByClassName("rPregunta");
     aux = [];
