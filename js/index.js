@@ -1,27 +1,27 @@
 var homeRoute = "/GDEM";
 
-$( "#fondoFormLogin" ).click(function() {
-    $(this).parent().toggleClass( "fondoFormLoginin");
-    $(this).parent().toggleClass( "fondoFormLoginout");
-});
+ 
+$( "#fondoFormLogin" ).click(function() { 
+    $(this).parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().addClass( "fondoFormLoginout");
+}); 
+ 
+$("#cancelFormLogin").click(function() { 
+    $(this).parent().parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().parent().addClass( "fondoFormLoginout"); 
+}); 
+ 
+$("#loginButton").click(function() { 
+    $("#fondoFormLogin").parent().removeClass("inicioIinvisible"); 
+    $("#fondoFormLogin").parent().removeClass( "fondoFormLoginout"); 
+    $("#fondoFormLogin").parent().addClass( "fondoFormLoginin"); 
+}); 
 
-$("#cancelFormLogin").click(function() {
-    $(this).parent().parent().toggleClass( "fondoFormLoginin");
-    $(this).parent().parent().toggleClass( "fondoFormLoginout");
-});
-
-$("#loginButton").click(function() {
-    $("#fondoFormLogin").parent().removeClass("inicioIinvisible");
-    $("#fondoFormLogin").parent().toggleClass( "fondoFormLoginin");
-    $("#fondoFormLogin").parent().toggleClass( "fondoFormLoginout");
-});
-
-
-$("#sendInformationLogin").click(function() {
-    $("#colectUserInfoName").val();
-    $("#colectUserInfoPass").val();
-    window.location.href=homeRoute+"/servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();
-});
+$("#sendInformationLogin").click(function() { 
+    $("#colectUserInfoName").val(); 
+    $("#colectUserInfoPass").val(); 
+    window.location.href="./servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();
+}); 
 
 
 var contresp=0;

@@ -66,7 +66,7 @@
 
     echo'
     <!-- Formulario Login -->
-   	<div class="fondoFormLoginout inicioIinvisible">
+   	<div class="inicioIinvisible">
    	    <div id="fondoFormLogin" class="fondoClickFormLoginin"></div>
    	    <div class="Animatedform">
             <label for="user">Usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
