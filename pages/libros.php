@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div class='row'>
+<div class=''>
 <?php
     session_start();
     include "../servicios/lenguaje.php";
@@ -7,9 +7,10 @@
     include "../objetos/header.php";
     $homeRute = "/GDEM";
     initStyles();
-    echo listar_archivos_multilinea("../media/Libros/".$_SESSION['lang'])."<div class='col-xs-12'></div></div>";
+    echo listar_archivos_multilinea("../media/Libros/".$_SESSION['lang']);
 ?>
 <br><br>
+</div>
 <?php
     include ("../objetos/pie.php");
 ?>

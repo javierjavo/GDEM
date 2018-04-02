@@ -27,25 +27,6 @@
         <main class="contenido" role="main">
              <section class="container" id="languajes" >
                  <div class="row text-center align-items-center bg-light"  style="min-height: 675px;">
-                   
-                    <div class="col-sm-6 py-4">
-                            <img class="img-fluid" src="/GDEM/media/niños_lapiz.jpg" alt="Logo_GDEM">
-                            <a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
-                            <a href="/GDEM/pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>  
-                    </div>
-                    <!-- Formulario Login -->
-                    <div class="fondoFormLoginout inicioIinvisible">
-                        <div id="fondoFormLogin2" class="fondoClickFormLoginin"></div>
-                        <div class="Animatedform">
-                            <label for="user">Usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input id="colectUserInfoName" name="user" type="text"><br>
-                            <label for="pass">Contraseña</label>
-                            <input id="colectUserInfoPass" name="pass" type="password"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input id="sendInformationLogin" class="btn btn-primary" type="button" value="login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input id="cancelFormLogin" class="btn btn-danger" type="button" value="cancel">
-                        </div>
-                    </div>
-                    
                     <div class="col-md-12">
                         <button class="btn btn-primary">Crear examen</button>
                     </div><br><br>

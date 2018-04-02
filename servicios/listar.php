@@ -40,6 +40,8 @@
         }
     .MainInformation{
         position: relative;
+        overflow-x: hidden;
+        margin-top: 10px;
     }
     .topYearNav{
         width: 100%;
@@ -47,9 +49,7 @@
     }
     .yearNavigator{
         position: relative;
-        top: 10px;
-        margin: 10px;
-        width: 100%;
+        top: 10px;        width: 100%;
         height: 100px;
     }
     .yearselector{
@@ -57,7 +57,10 @@
         background-color: rgba(30, 95, 159, 0.9);
         width: 150px;
         height: 100px;
+        margin-bottom: 10px;
         margin-left: 10px;
+        border-radius: 5px;
+        transition: all .5s ease;
         float: left;
     }
     .yearselector:hover{
@@ -70,6 +73,10 @@
         top: 40px;
         font-size: 20px;
         color: azure;
+    }
+    .contenedor-principal{
+        width: 100%;
+        box-sizing: border-box;
     }
     .content{
         position: relative;
@@ -100,6 +107,9 @@
     .subcontent{
         display: block;
     }
+    .colapsado{
+        display: none;
+    }
     .contentxt{
         position: relative;
         font-size: 10px;
@@ -114,6 +124,7 @@ function listar_archivos_multilinea($carpeta){
 		if($dir = opendir($carpeta)){
 			
             $archivos[] = null;
+            echo "<div class='contenedor-principal'>";
 			while(($archivo = readdir($dir)) !== false){
 				if($archivo != '.' && $archivo != '..' && $archivo != '.htaccess'){
 					if( is_dir($carpeta."/".$archivo) ){
@@ -121,7 +132,7 @@ function listar_archivos_multilinea($carpeta){
 						if( '&' == substr($archivo, 0, 1) )
 							$nombreArchivo = substr($archivo, 3);
 						$titulos[] = "<div class='yearselector' name='".$nombreArchivo."'><h3 class='titleYear'>".$nombreArchivo."</h3></div>";
-						echo "<div class='contenidoMain'>";
+						echo "<div class='contenidoMain colapsado'>";
                         echo listar_archivos($carpeta."/".$archivo,$nombreArchivo);
 						echo "</div>";
 					}else{
@@ -155,7 +166,7 @@ function listar_archivos_multilinea($carpeta){
 			
 		}
 	}
-    echo "</div>";
+    echo "</div></div>";
 }
 ?>
 
@@ -248,10 +259,15 @@ $(document).ready(function(){
     $(".info-sub-item").toggle("fast");
     $(".yearselector").click(function() {
         $( "."+yearfilter ).toggle("fast");
+        $( "."+yearfilter ).parent().addClass("colapsado");
+        
         yearfilter = $(this).attr('name');
+        
+        $( "."+yearfilter ).parent().removeClass("colapsado");
         $( "."+yearfilter ).toggle( "slow", function() {
             // todo bien
         });
+        
     });
     
     $(".subFiltro").click(function() {
