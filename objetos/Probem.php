@@ -10,12 +10,12 @@ while ($fila = $resultado->fetch_assoc()) {
 }
 echo'
                <div class="col-md-6">
-                   <img class="img-fluid" src="'.$homeRute.'/media/organization-chart.jpg" alt="Logo_GDEM">
+                   <img class="img-fluid" src="'.$homeRute.'/media/que_es.jpg" alt="Logo_GDEM">
                </div>
                <div class="col-md-6">
                    <h2>'.$langProbem[1].'</h2>
                    <p>'.$langProbem[0].'</p>
-                   <a href="#" class="btn btn-primary">Conoce mas de PROBEMJAL</a>
+                   <a href="/GDEM/pages/quePROBEM.php" class="btn btn-primary">Conoce mas de PROBEMJAL</a>
                </div>
     ';
 ?>

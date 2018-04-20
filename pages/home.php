@@ -29,7 +29,7 @@
                  <div class="row align-items-center justify-content-center bg-light home_container"  style="min-height: 675px;">
                     <?php 
                         include "../objetos/Probem.php"
-                    ?>
+                    ?> 
                     <?php 
                         include "../objetos/ProbemObjetivos.php"
                     ?>

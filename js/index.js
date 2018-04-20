@@ -50,6 +50,7 @@ function guardarObj(terminar){
     for(var i = 0; i<r.length;i++){
         aux.push(cont_pregunta+'|'+r[i].value);
     }
+    
     resp.push(aux);
     contresp=0;
     $('.rPregunta').remove();

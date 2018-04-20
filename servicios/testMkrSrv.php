@@ -5,21 +5,21 @@
 
     function validarIDAct($nombreAct){
         include 'conexion.php';
-        $consulta_a_la_base=mysqli_query($conexion,'select IDAct from actividades where tipo="'.$nombreAct.'"');
+        $consulta_a_la_base=mysqli_query($conexion,'select IDAct from actividades where nombre="'.$nombreAct.'"');
         $recoger_dato=mysqli_fetch_assoc($consulta_a_la_base);
         return $recoger_dato['IDAct'];
     }
 
     function validarIDPregunta($IDAct){
         include 'conexion.php';
-        $consulta_a_la_base=mysqli_query($conexion,'select IDPregunta from preguntas where ="'.$IDAct.'"');
+        $consulta_a_la_base=mysqli_query($conexion,'select IDPregunta from preguntas where IDAct="'.$IDAct.'"');
         $recoger_dato=mysqli_fetch_assoc($consulta_a_la_base);
         return $recoger_dato['IDPregunta']+1;
     }
 
     function validarIDRespuesta($IDPrg){
         include 'conexion.php';
-        $consulta_a_la_base=mysqli_query($conexion,'select IDRespuesta from respuestas where ="'.$IDPrg.'"');
+        $consulta_a_la_base=mysqli_query($conexion,'select IDRespuesta from respuestas where IDPregunta ="'.$IDPrg.'"');
         $recoger_dato=mysqli_fetch_assoc($consulta_a_la_base);
         return $recoger_dato['IDRespuesta']+1;
     }
@@ -29,8 +29,8 @@
     $tipo=mysqli_real_escape_string($conexion,$_REQUEST['tipo']);
     $field_values_array = $_REQUEST['preguntas'];
     $field_values_array2 = $_REQUEST['respuestas'];
-
-    $idAct=validarIDAct($tipo);//ver si existe id de examen, si no lo creamos
+    
+    $idAct=validarIDAct($nombre);//ver si existe id de examen, si no lo creamos
     if($idAct==null){
         $insertar=mysqli_query($conexion, 'insert into actividades(nombre,tipo,region) values ("'.$nombre.'","'.$tipo.'","'.$idioma.'")') or die ('No se puede registrar<br>'.mysqli_error($conexion));
     }
