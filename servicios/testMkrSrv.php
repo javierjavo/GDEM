@@ -12,7 +12,7 @@
 
     function validarIDPregunta($IDAct){
         include 'conexion.php';
-        $consulta_a_la_base=mysqli_query($conexion,'select IDPregunta from preguntas where IDAct="'.$IDAct.'"');
+        $consulta_a_la_base=mysqli_query($conexion,'select IDPregunta from preguntas where IDActividad="'.$IDAct.'"');
         $recoger_dato=mysqli_fetch_assoc($consulta_a_la_base);
         return $recoger_dato['IDPregunta']+1;
     }

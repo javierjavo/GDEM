@@ -9,50 +9,41 @@ while ($fila = $resultado->fetch_assoc()) {
     $langInfoDif[]= $fila[$_SESSION['lang']];
 }
 echo '
-       <div class="col-sm-8 text-justify">
-            <h2 class="text-center">'.$langInfoDif[0].'</h2>
-            <div>
-                <p>'.$langInfoDif[1].'</p>
-            </div>
-            <div>
-                <p>'.$langInfoDif[2].'</p>
-            </div>
-            <div>
-                <p>'.$langInfoDif[3].'</p>
-            </div>
-            <div>
-            <p>'.$langInfoDif[4].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[5].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[6].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[7].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[8].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[9].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[10].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[11].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[12].'</p>
-                </div>
-                <div>
-                    <p>'.$langInfoDif[13].'</p>
-                </div>
-        </div>   
-        <div class="col-sm-4 text-justify">
-                
-        </div>
-    '
+     <div class="contador parallax">
+       	<div class="contenido">
+            <ul class="sin-estilo">
+                <li class="texto">
+                    <p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+            	</li><!--#talleres-->
+            	<li class="texto">
+                    <p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+            	</li><!--#talleres-->
+            	<li class="texto">
+                    <p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+            	</li><!--#talleres-->
+            	<li class="texto">
+                    <p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+            	</li><!--#talleres-->
+            	<li class="texto">
+                    <p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+            	</li><!--#talleres-->
+            	<li class="texto">
+                    <p>Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for  will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+            	</li><!--#talleres-->
+        	</ul>
+    	</div>
+	</div>  
+'
 ?>

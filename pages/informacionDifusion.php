@@ -24,8 +24,8 @@
         </nav>
         </header>
             <!--Contenido de la pagina-->
-        <main class="contenido" role="main">
-             <section class="container" id="languajes" >
+        <main class="" role="main">
+             <section class="" id="" >
                  <div class="row align-items-center bg-light">
                     <?php 
                         include "../objetos/EstInfoDifusion.php"
