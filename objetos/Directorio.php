@@ -9,72 +9,35 @@ while ($fila = $resultado->fetch_assoc()) {
     $langDirectorio[]= $fila[$_SESSION['lang']];
 }
 echo'
-        <div class="col-md-12 align-items-center justify-content-center text-center">
-        <legend class="text-center">'.$langDirectorio[6].'</legend>
-        <table class="tabla_dir">
-          <thead>
-            <tr>
-              <th>'.$langDirectorio[0].'</th>
-              <th>'.$langDirectorio[1].'</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>'.$langDirectorio[2].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[3].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[4].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[5].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[2].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <thead>
-            <tr>
-              <th>'.$langDirectorio[0].'</th>
-              <th>'.$langDirectorio[1].'</th>
-            </tr>
-          </thead>
-            <tr>
-              <td>'.$langDirectorio[3].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[4].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[5].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[2].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[3].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[4].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-            <tr>
-              <td>'.$langDirectorio[5].'</td>
-              <td>Tel. 3315952876 Cel. 33144112221</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-    ';
+		<section>
+			<div class="directorio">
+				<p><i class="fas fa-address-book"></i>Directorio/Address Book</p>
+				<table>
+					<tr>
+						<td><i class="fas fa-user"></i><p>Nombre/Name</p></td>
+						<td><i class="fas fa-info-circle"></i><p>Cargo/Role</p></td>
+						<td><i class="fas fa-address-card"></i><p>Direccion/Address</p></td>
+						<td><i class="fas fa-phone"></i><p>Telefono/Phone Number</p></td>
+						<td><i class="fas fa-at"></i><p>Correo/E-Mail</p></td>
+					</tr>
+					<tr>
+						<td>
+							<p>Pepito</p>
+						</td>
+						<td>
+							<p>Admin</p>
+						</td>
+						<td>
+							<p>Av. Telos Chupo #2345</p>
+						</td>
+						<td>
+							<p>333-324-23</p>
+						</td>
+						<td>
+							<p>sandi.mandi@gmail.com</p>
+						</td>
+					</tr>
+			</div>
+		</section>
+	';
 ?>
