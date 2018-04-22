@@ -9,25 +9,21 @@ while ($fila = $resultado->fetch_assoc()) {
     $langContacto[]= $fila[$_SESSION['lang']];
 }
 echo'
-               <div class="col-md-12 text-center contacto">
-                   <form action="../servicios/insertar.php" class="login" method="post">
-                    <fieldset>
-                      <legend>'.$langContacto[0].'</legend>
-                       <label for="nombre"> '.$langContacto[1].':
-                        <input type="text" name="nombre" id="nombre" placeholder="'.$langContacto[1].'" autocomplete="on" required>
-                        </label>
-                        <br>
-                        <label for="estado"> '.$langContacto[2].':
-                        <input type="text" name="estado" id="estado" placeholder="'.$langContacto[2].'" autocomplete="on" required>
-                        </label>
-                        <br>
-                        <label for="comentarios"> '.$langContacto[3].':
-                        <input type="text" name="comentarios" id="comentarios" placeholder="'.$langContacto[3].'" autocomplete="on" required>
-                        </label>
-                        <br>
-                        <input class="btn btn-primary" name="submit" type="submit" id="boton" value="'.$langContacto[4].'" class="boton" onClick=""/>
-                    </fieldset>
-                </form>
-               </div>
-    ';
+		<div class="c-container">
+			<div class="c-redes-sociales" style="background-color: black; text-align: center;">
+				<p style="color: white;">Consulta nuestras redes sociales</p>
+				<a href="#"><i class="fab fa-facebook-f" style="color: #CE8227; font-size: 2em; padding: 0 15px;"></i></a>
+				<a href="#"><i class="fab fa-twitter" style="color: #CE8227; font-size: 2em; padding: 0 15px"></i></a>
+
+			</div><!--Redes sociales-->
+
+			<div class="c-contacto">
+				<p>Nuestros horarios: 9:00am a 5pm</p><br>
+				<p>Telefonos Oficina: (044) 334-435-43</p>
+				<p>Si llamas desde fuera del pais marca: (011), ahora marca 52, teclea 1 se llamas a celular y 2 si es a telefono fijo.<br> Ahora marca el telefono siguiente:<br>334-435-43</p>
+				<p><i class="fab fa-whatsapp" style="color: #CE8227; font-size: 2em; padding: 0 15px"></i>Whatsapp: 33-122-123-43</p>
+				<p><i class="fas fa-envelope" style="color: #CE8227; font-size: 2em; padding: 0 15px"></i>Correo: probemsej@jalisco.gob.mx</p>
+			</div>
+		</div>
+	';
 ?>
