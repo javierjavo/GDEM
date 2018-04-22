@@ -98,6 +98,11 @@
     width: 100px;
     border-radius: 100px;
 }
+.container div
+{
+    border-radius: 5px;
+    padding: 15px;
+}
 .header_chart
 {
     padding: 0px;
@@ -108,9 +113,14 @@
 {
     width: 100%;
 }
+.container {
+    margin: 30px auto;
+}
 .home_container
 {
-    border: 4px inset;
+    border: 0px inset;
+    border-radius: 5px;
+    padding: 15px;
     text-align: justify;
     
 }
@@ -141,14 +151,42 @@
     ul.sin-estilo{
         list-style: none;
     }
-    ul.sin-estilo li{
-        width: 27%;
+    ul.sin-estilo li.small-grid{
+        width: 30%;
         float: left;
         position: relative;
         background-color: white;
         padding: 10px;
         border: 1px solid black;
-        margin: 15px;
+        margin:25px 15px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
+        border-radius: 5px;
+        transition: all .5s ease; /* Animation */
+    }
+    ul.sin-estilo li.medium-grid{
+        width: 45%;
+        float: left;
+        position: relative;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid black;
+        margin: 15px 2%;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
+        border-radius: 5px;
+        transition: all .5s ease; /* Animation */
+    }
+    ul.sin-estilo li.large-grid{
+        width: 90%;
+        float: left;
+        position: relative;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid black;
+        margin: 15px 3%;
         -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
         -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.74);

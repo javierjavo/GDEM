@@ -9,13 +9,13 @@ while ($fila = $resultado->fetch_assoc()) {
     $langProbem[]= $fila[$_SESSION['lang']];
 }
 echo'
+                <div class="col-md-6">
+                   <h2>'.$langProbem[1].'</h2>
+                   <p>'.$langProbem[0].'</p>
+               </div>
                <div class="col-md-6">
                    <img class="img-fluid" src="'.$homeRute.'/media/que_es.jpg" alt="Logo_GDEM">
                </div>
-               <div class="col-md-6">
-                   <h2>'.$langProbem[1].'</h2>
-                   <p>'.$langProbem[0].'</p>
-                   <a href="/GDEM/pages/quePROBEM.php" class="btn btn-primary">Conoce mas de PROBEMJAL</a>
-               </div>
+               
     ';
 ?>

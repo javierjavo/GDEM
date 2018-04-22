@@ -26,27 +26,31 @@
             <!--Contenido de la pagina-->
         <main class="contenido" role="main">
              <section class="container" id="languajes" >
-                 <div class="row align-items-center justify-content-center bg-light home_container"  style="min-height: 675px;">
+                 <div class="row align-items-center justify-content-center bg-light home_container">
                     <?php 
                         include "../objetos/Probem.php"
                     ?> 
+                 </div>
+            </section>
+            <section class="container" id="languajes" >
+                 <div class="row align-items-center justify-content-center home_container">
                     <?php 
                         include "../objetos/ProbemObjetivos.php"
                     ?>
+                 </div>
+            </section>
+            <section class="container" id="languajes" >
+                 <div class="row align-items-center justify-content-center bg-light home_container">
                     <?php 
                         include "../objetos/ProbemMisionVision.php"
                     ?>
+                 </div>
+            </section>
+            <section class="container" id="languajes" >
+                 <div class="row align-items-center justify-content-center bg-light home_container">
                     <?php 
                         include "../objetos/ProbemHistoria.php"
                     ?>
-                    
-                    <?php 
-                        include "../objetos/Directorio.php"
-                    ?>
-                    <?php 
-                        include "../objetos/Contacto.php"
-                    ?>
-
                  </div>
             </section>
         </main>

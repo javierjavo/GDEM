@@ -43,7 +43,6 @@
    	<!--Contenido de la pagina-->
 	<main class="contenido" role="main">
         
-        <a href="servicios/httpsRequest.php?variableHtml=https://www.google.com">https://www.google.com</a><br>
 		<section class="container" id="languajes" >
             <div class="row align-items-center" style="min-height: 675px;">
                 <div class="col text-center"><a href="pages/home.php?lang=es" class="btn btn-lg btn-primary btn-lang">Español</a></div>

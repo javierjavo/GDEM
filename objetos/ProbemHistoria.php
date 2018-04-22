@@ -15,7 +15,6 @@ echo'
                </div>
                <div class="col-md-12 text-center">
                     <img class="img-fluid" src="'.$homeRute.'/media/historia.jpg" alt="Logo_GDEM"><br>
-                    <a href="/GDEM/pages/quePROBEM.php" class="btn btn-primary">PROBEM a traves del tiempo</a>
                 </form>
                </div>
     ';

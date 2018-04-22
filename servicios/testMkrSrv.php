@@ -54,7 +54,9 @@
         }
     }    
     mysqli_close($conexion);
-   	$_SESSION['alert'] = "Examen tipo: ".$tipo.", Registrado con exito";
+   	$_SESSION['alert'] = "Examen tipo: ".$tipo.", Registrado con exitOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO";
+
+
     if($idAct!=null){
         //respondes un error de examen existente\
         $_SESSION['alert'] = "Este tipo de examen ya existe";
