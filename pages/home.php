@@ -17,37 +17,37 @@
             <!--Barra de seguimiento dentro del portal-->
         <nav aria-label="breadcrumb" role="navigation" class="bg-light">
           <ol class="breadcrumb" style="margin-bottom: 0px;">
-            <li class="breadcrumb-item active" aria-current="page"><a class="textoDinamico" href="../index.php">Bienvenido</a></li>
-            <li class="breadcrumb-item active textoDinamico" aria-current="page">Inicio - Español</li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="h2 text-primary textoDinamico" href="../index.php">Bienvenido</a></li>
+            <li class="breadcrumb-item active textoDinamico h2" aria-current="page">Inicio - Español</li>
           </ol>
         </nav>
         </header>
            
             <!--Contenido de la pagina-->
         <main class="contenido" role="main">
-             <section class="container" id="languajes" >
+             <section class="container container-move" id="languajes" >
                  <div class="row align-items-center justify-content-center bg-light home_container">
                     <?php 
                         include "../objetos/Probem.php"
                     ?> 
                  </div>
             </section>
-            <section class="container" id="languajes" >
+            <section class="container container-move" id="languajes" >
                  <div class="row align-items-center justify-content-center home_container">
                     <?php 
                         include "../objetos/ProbemObjetivos.php"
                     ?>
                  </div>
             </section>
-            <section class="container" id="languajes" >
+            <section class="container container-move" id="languajes" >
                  <div class="row align-items-center justify-content-center bg-light home_container">
                     <?php 
                         include "../objetos/ProbemMisionVision.php"
                     ?>
                  </div>
             </section>
-            <section class="container" id="languajes" >
-                 <div class="row align-items-center justify-content-center bg-light home_container">
+            <section class="container container-move" id="languajes" >
+                 <div class="row align-items-center justify-content-center home_container">
                     <?php 
                         include "../objetos/ProbemHistoria.php"
                     ?>

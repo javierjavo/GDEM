@@ -12,25 +12,25 @@
     echo'<div class="collapse bg-light" id="navbarHeader" style="">
         <div class="container-fluid">
             <div class="row">
-                <div class="header_chart col-sm-8 py-4">
+                <div class="header_chart col-sm-8">
                     <div class="row">
-                        <div class="col-sm-6 py-4">
+                        <div class="col-sm-6">
                             <div class="row">
-                                <div class="col-sm-6 py-4">
+                                <div class="col-sm-6">
                                     <img class="img-fluid" src="'.$homeRute.'/media/Logo_probem.png" alt="Logo_GDEM">
                                 </div>
-                                <div class="col-sm-6 py-4"> 
+                                <div class="col-sm-6"> 
                                     <h3 class="text-center">PROBEMJal</h3>
                                     <p class="text-center">Programa Binacional de Educación Migrante/ Binational Program for Migrant Education</p>  
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 py-4"> 
+                        <div class="col-sm-5 mr-4"> 
                             <div class="row">
                                 <div class="col-sm-6 py-4">
                                     <img class="img-fluid header_logoGDEM" src="'.$homeRute.'/media/GDEM2.png" alt="Logo_GDEM">
                                 </div>
-                                <div class="col-sm-6 py-4"> 
+                                <div class="col-sm-6"> 
                                     <h3 class="text-center">GDEM</h3>
                                     <p class="text-center">Guia Digital de Educación al Migrante / National Digital Guide for Migrants</p>  
                                 </div>
@@ -38,11 +38,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 py-4 text-center">
+                <div class="col-sm-4 text-center">
                     <div class="row">
                         
-                        <div class="col-sm-23 py-4"> 
-                            <img class="img-fluid header_signin" src="'.$homeRute.'/media/niños_lapiz.jpg" alt="Logo_GDEM">
+                        <div class="col-sm-23"> 
+                            <img class="img-fluid header_signin my-2" src="'.$homeRute.'/media/niños_lapiz.jpg" alt="Logo_GDEM">
                             <br><a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
                             <a href="'.$homeRute.'/pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>  
                         </div>

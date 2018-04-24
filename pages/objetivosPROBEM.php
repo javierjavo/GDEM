@@ -17,15 +17,15 @@
             <!--Barra de seguimiento dentro del portal-->
         <nav aria-label="breadcrumb" role="navigation" class="bg-light">
           <ol class="breadcrumb" style="margin-bottom: 0px;">
-            <li class="breadcrumb-item active" aria-current="page"><a class="textoDinamico" href="../index.php">Anterior</a></li>
-            <li class="breadcrumb-item " aria-current="page"><a class="textoDinamico" href="../index.php">Anterior</a></li>
-            <li class="breadcrumb-item active textoDinamico" aria-current="page">Actual</li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="textoDinamico h2 text-primary" href="../index.php">Anterior</a></li>
+            <li class="breadcrumb-item " aria-current="page"><a class="textoDinamico h2 text-primary" href="../index.php">Anterior</a></li>
+            <li class="breadcrumb-item active textoDinamico h2" aria-current="page">Actual</li>
           </ol>
         </nav>
         </header>
             <!--Contenido de la pagina-->
         <main class="contenido" role="main">
-             <section class="container" id="languajes" >
+             <section class="container container-move" id="languajes" >
                  <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
                     <?php 
                         include "../objetos/ProbemObjetivos.php"

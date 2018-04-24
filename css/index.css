@@ -103,6 +103,10 @@
     border-radius: 5px;
     padding: 15px;
 }
+.container-move div div:hover
+{
+    transform: scale(1.05);
+}
 .header_chart
 {
     padding: 0px;

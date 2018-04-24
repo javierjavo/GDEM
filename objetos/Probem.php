@@ -10,8 +10,8 @@ while ($fila = $resultado->fetch_assoc()) {
 }
 echo'
                 <div class="col-md-6">
-                   <h2>'.$langProbem[1].'</h2>
-                   <p>'.$langProbem[0].'</p>
+                   <h1>'.$langProbem[1].'</h1>
+                   <p class="text-justify">'.$langProbem[0].'</p>
                </div>
                <div class="col-md-6">
                    <img class="img-fluid" src="'.$homeRute.'/media/que_es.jpg" alt="Logo_GDEM">

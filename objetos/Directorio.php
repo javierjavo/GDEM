@@ -10,7 +10,7 @@ while ($fila = $resultado->fetch_assoc()) {
 }
 echo'
 		<section>
-			<div class="directorio">
+			<div class="directorio col-md-12">
 				<p><i class="fas fa-address-book"></i>Directorio/Address Book</p>
 				<table>
 					<tr>

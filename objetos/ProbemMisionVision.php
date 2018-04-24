@@ -10,15 +10,15 @@ while ($fila = $resultado->fetch_assoc()) {
 }
 echo'
                <div class="col-md-4">
-                   <h2>' . $langProbem[0] . '</h2>
-                   <p> '. $langProbem[1] . $langProbem[2] . $langProbem[3] .$langProbem[4] .' </p>
+                   <h1>' . $langProbem[0] . '</h1>
+                   <p class="text-justify"> '. $langProbem[1] . $langProbem[2] . $langProbem[3] .$langProbem[4] .' </p>
                </div>
                <div class="col-md-4 text-center">
                    <img class="img-fluid" src="'.$homeRute.'/media/Misin-vision-valores.jpg" alt="Logo_GDEM"><br>
                </div>
                <div class="col-md-4">
-                   <h2>' . $langProbem[5] . '</h2>
-                   <p> '. $langProbem[6]. ' </p>
+                   <h1>' . $langProbem[5] . '</h1>
+                   <p class="text-justify"> '. $langProbem[6]. ' </p>
                </div>
     ';
 ?>
