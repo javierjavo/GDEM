@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<?php
-    include "../servicios/lenguaje.php";
-    initStyles();
-?>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale=1, shrink-to-fit = no" >
         <title>Home GDEM</title>
          <!-- Bootstrap CSS -->
+         <?php
+            include "../servicios/lenguaje.php";
+            initStyles();
+        ?>
     </head>
     <body class="fondoHome">
         <header  role="banner">
-            <?php
+               <?php
                 include"../objetos/header.php";
             ?>
             <!--Barra de seguimiento dentro del portal-->
         <nav aria-label="breadcrumb" role="navigation" class="bg-light">
           <ol class="breadcrumb" style="margin-bottom: 0px;">
-            <li class="breadcrumb-item active" aria-current="page"><a class="h2 text-primary textoDinamico" href="../index.php">Bienvenido</a></li>
-            <li class="breadcrumb-item active textoDinamico h2" aria-current="page">Inicio - Español</li>
+            <li class="breadcrumb-item active" aria-current="page"><a class="h4 text-primary textoDinamico" href="../index.php">Bienvenido</a></li>
+            <li class="breadcrumb-item active textoDinamico h4" aria-current="page">Inicio - Español</li>
           </ol>
         </nav>
         </header>

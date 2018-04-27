@@ -69,11 +69,11 @@
    	<div class="inicioIinvisible">
    	    <div id="fondoFormLogin" class="fondoClickFormLoginin"></div>
    	    <div class="Animatedform">
-            <label for="user">Usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label for="user">Usuario</label>
             <input id="colectUserInfoName" name="user" type="text"><br>
             <label for="pass">Contraseña</label>
-            <input id="colectUserInfoPass" name="pass" type="password"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input id="sendInformationLogin" class="btn btn-primary" type="button" value="login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="colectUserInfoPass" name="pass" type="password"><br>
+            <input id="sendInformationLogin" class="btn btn-primary" type="button" value="login">
             <input id="cancelFormLogin" class="btn btn-danger" type="button" value="cancel">
         </div>
    	</div>';

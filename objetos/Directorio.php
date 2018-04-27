@@ -9,8 +9,7 @@ while ($fila = $resultado->fetch_assoc()) {
     $langDirectorio[]= $fila[$_SESSION['lang']];
 }
 echo'
-		<section>
-			<div class="directorio col-md-12">
+			<div class="col-md-12">
 				<p><i class="fas fa-address-book"></i>Directorio/Address Book</p>
 				<table>
 					<tr>
@@ -37,7 +36,7 @@ echo'
 							<p>sandi.mandi@gmail.com</p>
 						</td>
 					</tr>
+                </table>
 			</div>
-		</section>
 	';
 ?>

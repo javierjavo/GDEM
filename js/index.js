@@ -20,7 +20,7 @@ $("#loginButton").click(function() {
 $("#sendInformationLogin").click(function() { 
     $("#colectUserInfoName").val(); 
     $("#colectUserInfoPass").val(); 
-    window.location.href="./servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();
+    window.location.href="/GDEM/servicios/login.php?usr="+$("#colectUserInfoName").val()+"&pass="+$("#colectUserInfoPass").val();
 }); 
 
 

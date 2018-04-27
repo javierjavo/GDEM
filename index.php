@@ -19,14 +19,16 @@
     ?>
     <!-- Barra de navegación principal-->
     <nav class="navbar navbar-light bg-light">
-        <div class="col-sm-1 py-4">
+        <div class="col-sm-3 py-4">
+            <img class="img-fluid" src="media/sep.png" alt="Logo_GDEM">
+        </div>
+       <div class="col-sm-3 py-4">
+            <img class="img-fluid" src="media/jalisco.jpg" alt="Logo_GDEM">
+        </div>
+       <div class="col-sm-3 py-4">
             <img class="img-fluid" src="media/Logo_probem.png" alt="Logo_GDEM">
         </div>
-       <div class="col-sm-1"><a href="index.php" class="navbar-brand">GDEM</a></div>
-       <div class="col-sm-8 text-center">
-       <!-- Aqui va el menú de navegación-->
-       </div>
-       <div class="col-sm-2">
+       <div class="col-sm-2 text-cen">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
             <span class="textoDinamico">Mostrar / Ocultar</span>
         </button>
@@ -35,7 +37,7 @@
     <!--Barra de seguimiento dentro del portal-->
     <nav aria-label="breadcrumb" role="navigation" class="bg-light">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active textoDinamico" aria-current="page">Bienvenida/welcome</li>
+        <li class="breadcrumb-item active textoDinamico h4" aria-current="page">Bienvenida/welcome</li>
       </ol>
     </nav>
    	</header>
