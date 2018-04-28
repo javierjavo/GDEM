@@ -10,6 +10,7 @@ while ($fila = $resultado->fetch_assoc()) {
 }
 echo'	
 			<div class="col-md-12 iframe-directorio">
+				<h2>Directorio</h2>
 				<iframe src="/GDEM/data-sources/data-directorio" class="iframe-style" frameborder="0" width="800" height="500"></iframe>
 			</div>
 	';
