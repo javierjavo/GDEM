@@ -8,35 +8,9 @@ $resultado->data_seek(0);
 while ($fila = $resultado->fetch_assoc()) {
     $langDirectorio[]= $fila[$_SESSION['lang']];
 }
-echo'
-			<div class="col-md-12">
-				<p><i class="fas fa-address-book"></i>Directorio/Address Book</p>
-				<table>
-					<tr>
-						<td><i class="fas fa-user"></i><p>Nombre/Name</p></td>
-						<td><i class="fas fa-info-circle"></i><p>Cargo/Role</p></td>
-						<td><i class="fas fa-address-card"></i><p>Direccion/Address</p></td>
-						<td><i class="fas fa-phone"></i><p>Telefono/Phone Number</p></td>
-						<td><i class="fas fa-at"></i><p>Correo/E-Mail</p></td>
-					</tr>
-					<tr>
-						<td>
-							<p>Pepito</p>
-						</td>
-						<td>
-							<p>Admin</p>
-						</td>
-						<td>
-							<p>Av. Telos Chupo #2345</p>
-						</td>
-						<td>
-							<p>333-324-23</p>
-						</td>
-						<td>
-							<p>sandi.mandi@gmail.com</p>
-						</td>
-					</tr>
-                </table>
+echo'	
+			<div class="col-md-12 iframe-directorio">
+				<iframe src="/GDEM/data-sources/data-directorio" class="iframe-style" frameborder="0" width="800" height="500"></iframe>
 			</div>
 	';
 ?>
