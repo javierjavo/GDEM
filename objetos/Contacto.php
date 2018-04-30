@@ -3,7 +3,7 @@ $homeRute = "/GDEM";
 include($_SERVER['DOCUMENT_ROOT'].'/GDEM/servicios/conexion.php');
 session_start();
 $langContacto = [];
-$resultado = $conexion->query("SELECT ".$_SESSION['lang']." FROM lenguaje WHERE page='contacto'");
+$resultado = $conexion->query("SELECT ".$_SESSION['lang']." FROM lenguaje WHERE page='contactanos'");
 $resultado->data_seek(0);
 while ($fila = $resultado->fetch_assoc()) {
     $langContacto[]= $fila[$_SESSION['lang']];
@@ -18,9 +18,9 @@ echo'
 			</div><!--Redes sociales-->
 
 			<div class="c-contacto">
-				<p>Nuestros horarios: 9:00am a 5pm</p><br>
-				<p>Telefonos Oficina: (044) 334-435-43</p>
-				<p>Si llamas desde fuera del pais marca: (011), ahora marca 52, teclea 1 se llamas a celular y 2 si es a telefono fijo.<br> Ahora marca el telefono siguiente:<br>334-435-43</p>
+				<p>'.$langContacto[0].'</p><br>
+				<p>'.$langContacto[1].'</p>
+				<p>'.$langContacto[2].'</p>
 				<p><i class="fab fa-whatsapp" style="color: #CE8227; font-size: 2em; padding: 0 15px"></i>Whatsapp: 33-122-123-43</p>
 				<p><i class="fas fa-envelope" style="color: #CE8227; font-size: 2em; padding: 0 15px"></i>Correo: probemsej@jalisco.gob.mx</p>
 			</div>

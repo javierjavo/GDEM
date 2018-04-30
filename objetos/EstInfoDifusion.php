@@ -12,36 +12,61 @@ echo '
      <div class="contador parallax">
        	<div class="contenido">
             <ul class="sin-estilo">
-                <li class="texto small-grid">
-                    <p>Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                <li class="texto large-grid" style="text-align: center">
+                    <h2>'.$langInfoDif[0].'</h2>
+            	</li><!--#talleres-->
+            	<li class="texto small-grid">
+                    <p>
+                        '.$langInfoDif[1].'
+
                     </p>
             	</li><!--#talleres-->
             	<li class="texto small-grid">
-                    <p>Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    <p>
+                         '.$langInfoDif[2].'
                     </p>
             	</li><!--#talleres-->
             	<li class="texto small-grid">
-                    <p>Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </p>
-            	</li><!--#talleres-->
-            	<li class="texto medium-grid">
-                    <p>Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </p>
-            	</li><!--#talleres-->
-            	<li class="texto medium-grid">
-                    <p>Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                    </p>
+                    <p>  '.$langInfoDif[3].'</p>
             	</li><!--#talleres-->
             	<li class="texto large-grid">
-                    <p>Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using , making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for  will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    <p>    '.$langInfoDif[4].' </p>
+            	</li><!--#talleres-->
+            	<li class="texto medium-grid">
+                    <p>
+                         '.$langInfoDif[1].'
                     </p>
             	</li><!--#talleres-->
+                <li class="texto large-grid">
+                    <p>    '.$langInfoDif[4].' </p>
+            	</li>
+                
+                <li class="texto small-grid">
+                    <p>    '.$langInfoDif[5].' </p>
+            	</li>
+                <li class="texto large-grid">
+                    <p>    '.$langInfoDif[6].' </p>
+            	</li>
+                
+                <li class="texto medium-grid">
+                    <p>    '.$langInfoDif[7].' </p>
+            	</li>
+                <li class="texto medium-grid">
+                    <p>    '.$langInfoDif[8].' </p>
+            	</li>
+                <li class="texto medium-grid">
+                    <p>    '.$langInfoDif[9].' </p>
+            	</li>
+                <li class="texto medium-grid">
+                    <p>    '.$langInfoDif[10].' </p>
+            	</li>
+                <li class="texto medium-grid">
+                    <p>    '.$langInfoDif[11].' </p>
+            	</li>
+                <li class="texto medium-grid">
+                    <p>    '.$langInfoDif[12].' </p>
+            	</li>
+               
         	</ul>
     	</div>
 	</div>  
