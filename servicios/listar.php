@@ -17,25 +17,25 @@
           font-size: 14px;
           color: #900;
         }
-        a {
+        section a {
           font-family: Arial, Helvetica, sans-serif;
           font-size: 20px;
           color: #555;
                 text-decoration: none;
 
         }
-        a:visited {
+        section a:visited {
           color: #666;
           text-decoration: none;
         }
-        a:hover {
+        section a:hover {
           color: #900;
           text-decoration: none;
         }
-        a:link {
+        section a:link {
           text-decoration: none;
         }
-        a:active {
+        section a:active {
           text-decoration: none;
         }
     .MainInformation{
@@ -55,7 +55,7 @@
     .yearselector{
         position: relative;
         background-color: rgba(30, 95, 159, 0.9);
-        width: 150px;
+        width: 30%;
         height: 100px;
         margin-bottom: 10px;
         margin-left: 10px;

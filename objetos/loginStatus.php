@@ -41,7 +41,7 @@
                 <div class="col-sm-4 text-center">
                     <div class="row">
                         
-                        <div class="col-sm-23"> 
+                        <div class="col-sm-12"> 
                             <img class="img-fluid header_signin my-2" src="'.$homeRute.'/media/niños_lapiz.jpg" alt="Logo_GDEM">
                             <br><a href="#" id="loginButton" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
                             <a href="'.$homeRute.'/pages/formulario.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Registrarse / Create account </a>  
@@ -53,28 +53,61 @@
         </div>
     </div>';
     }else{
-        echo'<div class="navbar navbar-light bg-light"><h3>'.$_SESSION['usr'].'</h3></div><div class="collapse show bg-light" id="navbarHeader" style="">
-        <div class="container-fluid containerMenuOption">
-            <a class="menuOp" href="">menu option 1</a>
-            <a class="menuOp" href="">menu option 2</a>
-            <a class="menuOp" href="">menu option 3</a>
-            <a class="menuOp" href="">menu option 4</a>
-            <a class="menuOp" href="'.$homeRute.'/servicios/logout.php">logout</a>
+        echo'   <div class="navbar navbar-light bg-light justify-content-end p-0 pr-2"><i class="fas fa-user mx-2"></i><h1 class="text-muted">'.$_SESSION['usr'].'</h3></div>
+    <div class="collapse bg-light" id="navbarHeader" style="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header_chart col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img class="img-fluid" src="'.$homeRute.'/media/Logo_probem.png" alt="Logo_GDEM">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6"> 
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="img-fluid header_logoGDEM" src="'.$homeRute.'/media/GDEM2.png" alt="Logo_GDEM">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <div class="row">
+                        <div class="col-sm-12"> 
+                                <div class="navbar m-0 p-0 justify-content-center">
+                                    <a class="menuOp" href="/GDEM/pages/perfil.php">Mi Perfil</a>
+                                    <a class="menuOp" href="">Calendario</a>
+                                    <a class="menuOp" href="">Favoritos</a>
+                                    <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
+                                    <a class="menuOp" href="'.$homeRute.'/servicios/logout.php">Logout</a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-    </div>';
+    </div>
+    
+    ';
     }
 
     echo'
     <!-- Formulario Login -->
    	<div class="inicioIinvisible">
    	    <div id="fondoFormLogin" class="fondoClickFormLoginin"></div>
-   	    <div class="Animatedform">
-            <label for="user">Usuario</label>
+   	    <div class="Animatedform text-center align-items-center">
+            <label for="user" class="my-2">Usuario</label><br>
             <input id="colectUserInfoName" name="user" type="text"><br>
-            <label for="pass">Contraseña</label>
+            <label for="pass" class="my-2">Contraseña</label><br>
             <input id="colectUserInfoPass" name="pass" type="password"><br>
-            <input id="sendInformationLogin" class="btn btn-primary" type="button" value="login">
-            <input id="cancelFormLogin" class="btn btn-danger" type="button" value="cancel">
+            <input id="sendInformationLogin" class="m-3 btn btn-primary" type="button" value="login">
+            <input id="cancelFormLogin" class="m-3 btn btn-danger" type="button" value="cancel">
         </div>
    	</div>';
 

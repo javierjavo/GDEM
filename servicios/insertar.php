@@ -29,7 +29,7 @@ if (isset($_POST['nombre']) and isset($_POST['clave1'])){
         $id=Verificacion($nombredeusuario);
         $insertar1=mysqli_query($conexion, "INSERT INTO `personalinfo`(`IDLogin`, `nombre`, `edad`, `tipousuario`, `escolaridad`, `pais`, `idioma`) VALUES('$id','$nombredeusuario','$edad','$tipousuario','$escolaridad','$residencia','$idioma')")or die ('No se puede registrar<br>'.mysqli_error($conexion));
         mysqli_close($conexion);
-        $_SESSION['error'] = $nombredeusuario." registrado con exito";
+        $_SESSION['alert'] = $nombredeusuario." registrado con exito";
     }else{
         //respondes un error de cuenta existente\
         $_SESSION['alert'] = "El usuario ya esta en uso intenta usar otro, puede ser tu correo electronico";

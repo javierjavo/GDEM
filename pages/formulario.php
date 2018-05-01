@@ -20,33 +20,49 @@
    	   	<!--Contenido de la pagina-->
 	<main class="contenido" role="main">
 		<section class="container" id="languajes" >
-            <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
-               <div class="col-md-auto">
+            <div class="row text-center align-items-center justify-content-center bg-light"  style="min-height: 675px;">
+               <div class="col-md-10">
                    <form action="../servicios/insertar.php" class="login" method="post">
                     <fieldset>
-                      <legend>Introduce tu informacion aqui / Enter your information here</legend>
-                       <label for="nombre"> Nombre o Pseudonimo / Name or Nickname:
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre / Name" autocomplete="on" required>
+                      <legend class="m-3 text-secondary display-4">Introduce tu informacion aqui / Enter your information here</legend>
+                      <div class="row">
+                         <div class="col-md-6 text-right">
+                             <label class="my-4" for="nombre"> Nombre o Pseudonimo / Name or Nickname:
                         </label>
                         <br>
-                        <label for="edad"> Edad / Age:
-                          <input type="number" name="edad" id="edad" placeholder="Edad / Age" autocomplete="on" required min="0"/>
+                        <label class="my-4" for="edad"> Edad / Age:
+                          
                         </label>
                         <br>
-                        <label for="">Residencia / Place of residence</label>
-                          <select class="residencia" name="residencia">
+                        <label class="my-4" for="">Residencia / Place of residence</label>
+                          
+                        <br>
+                        <label class="my-4" for="">Tipo de usuario / Type of user</label>
+                            
+                        <br>
+                        <label class="my-4" for="">Ultima escolaridad cursada / Last grade taken: (México)</label>
+                         
+                        <br>
+                        <label class="my-4" for="">
+                          Contraseña / Password: 
+                        </label>
+                        <br> 
+                        <label  class="my-4" for="">
+                          Repite la contraseña / Repeat password:  
+                        </label> <br>
+                         </div>
+                         <div class="col-md-6 text-left">
+                             <input type="text" class="my-4" name="nombre" id="nombre" placeholder="Nombre / Name" autocomplete="on" required/><br>
+                             <input type="number" class="my-4" name="edad" id="edad" placeholder="Edad / Age" autocomplete="on" required min="0"/><br>
+                             <select class="residencia my-4" name="residencia">
                             <option value="usa">United States of America</option>
                             <option value="mex" selected>Mexico</option>       
-                          </select>
-                        <br>
-                        <label for="">Tipo de usuario / Type of user</label>
-                            <select class="tipousuario" name="tipousuario">
+                          </select><br>
+                          <select class="tipousuario my-4" name="tipousuario">
                                 <option value="maestro">Maestro </option>
                                 <option value="alumno" selected>Alumno</option>         
-                            </select>
-                        <br>
-                        <label for="">Ultima escolaridad cursada / Last grade taken: (México)</label>
-                          <select class="residencia" name="escolaridad">
+                            </select><br>
+                             <select class="residencia my-4" name="escolaridad">
                             <option value="kinderGarden">Kinder Garden</option>
                             <option value="elementary" selected>Elementary School</option>       
                             <option value="middle" selected>Middle School</option>       
@@ -54,16 +70,12 @@
                             <option value="primaria">Educación basica</option>
                             <option value="secundaria">Educación Media</option>
                             <option value="universidad">Educación Media Superior</option>
-                          </select>
-                        <br>
-                        <label for="">
-                          Contraseña / Password: <input type="password" name="clave1" size="20" placeholder="ingresar password"> 
-                        </label>
-                        <br> 
-                        <label for="">
-                          Repite la contraseña / Repeat password: <input type="password" name="clave2" size="20" placeholder="repetir password"> 
-                        </label> <br>
-                        <input class="btn btn-primary" name="submit" type="submit" id="boton" value="Registrar / Register" class="boton" onClick="comprobarClave()"/>
+                          </select><br>
+                          <input type="password" class="my-4" name="clave1" size="20" placeholder="Ingresar password"> <br>
+                          <input type="password" class="my-4" name="clave2" size="20" placeholder="Repetir password"> <br>
+                         </div>
+                      </div>
+                        <input class="btn btn-primary mx-4" name="submit" type="submit" id="boton" value="Registrar / Register" class="boton" onClick="comprobarClave()"/>
                         <button class="btn btn-secondary" type="reset" >Limpiar formulario / Clean form</button>       
                     </fieldset>
                 </form>
