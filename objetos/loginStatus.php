@@ -53,48 +53,95 @@
         </div>
     </div>';
     }else{
-        echo'   <div class="navbar navbar-light bg-light justify-content-end p-0 pr-2"><i class="fas fa-user mx-2"></i><h1 class="text-muted">'.$_SESSION['usr'].'</h3></div>
-    <div class="collapse bg-light" id="navbarHeader" style="">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="header_chart col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <img class="img-fluid" src="'.$homeRute.'/media/Logo_probem.png" alt="Logo_GDEM">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6"> 
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <img class="img-fluid header_logoGDEM" src="'.$homeRute.'/media/GDEM2.png" alt="Logo_GDEM">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 text-center">
-                    <div class="row">
-                        <div class="col-sm-12"> 
-                                <div class="navbar m-0 p-0 justify-content-center">
-                                    <a class="menuOp" href="/GDEM/pages/perfil.php">Mi Perfil</a>
-                                    <a class="menuOp" href="">Calendario</a>
-                                    <a class="menuOp" href="">Favoritos</a>
-                                    <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
-                                    <a class="menuOp" href="'.$homeRute.'/servicios/logout.php">Logout</a>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
+       include($_SERVER['DOCUMENT_ROOT'].'/GDEM/servicios/conexion.php');
+        session_start();
+        if ($resultadoT =$conexion->query("SELECT tipousuario FROM personalinfo where nombre='" . $_SESSION['usr'] . "'"))
+        {
+            while($fila_actual = $resultadoT->fetch_row())
+            {
+                echo 
+                    '
+                        <div class="navbar navbar-light bg-light justify-content-end p-0 pr-2"><i class="fas fa-user mx-2"></i><h1 class="text-muted">'.$_SESSION['usr'].'</h3></div>
+                    ';
                     
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    ';
+                if ($_SESSION['menu_status'])
+                {
+                    echo '
+                    <div class="collapse show bg-light" id="navbarHeader" style="">';
+                }
+                else
+                {
+                    echo '
+                    <div class="collapse bg-light" id="navbarHeader" style="">';
+                }
+                echo '
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="header_chart col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <img class="img-fluid" src="'.$homeRute.'/media/Logo_probem.png" alt="Logo_GDEM">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6"> 
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <img class="img-fluid header_logoGDEM" src="'.$homeRute.'/media/GDEM2.png" alt="Logo_GDEM">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 text-center">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                    ';
+                if ($fila_actual[0] == 'admin')
+                {
+                    echo'   
+                                                <div class="navbar m-0 p-0 justify-content-center">
+                                                    <a class="menuOp" href="">Agregar eventos</a>
+                                                    <a class="menuOp" href="">Agregar examenes</a>
+                                                    <a class="menuOp" href="">Info escuelas</a>
+                                                    <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
+                    ';
+                }
+                else
+                {
+                    echo
+                        '
+                                                <div class="navbar m-0 p-0 justify-content-center">
+                                                    <a class="menuOp" href="/GDEM/pages/perfil.php">Mi Perfil</a>
+                                                    <a class="menuOp" href="">Calendario</a>
+                                                    <a class="menuOp" href="">Examenes cognitivos</a>
+                                                    <a class="menuOp" href="">Escuelas cercanas</a>
+                                                    <a class="menuOp" href="">Favoritos</a>
+                                                    <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
+                        ';
+                }
+                echo 
+                    '
+                        <a class="menuOp" href="'.$homeRute.'/servicios/logout.php">Logout</a>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    ';
+            }
+        }
+        else
+        {
+            echo 'Error en la validacion de tipo de usuario';
+        }
+        
     }
 
     echo'
