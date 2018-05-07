@@ -15,20 +15,15 @@ class conexion extends CI_Controller {
 
 	public function index()
 	{
+		//$_GET["var"];
+		//hacer query select y comparar si el contenido de get coincide con db
+		//llamar el mini json de true para login
 		$this->load->model('conexion_model');
 		$consulta_usuarios_sql = $this->conexion_model->GetAll();
-		$imported_data = json_encode($consulta_usuarios_sql);
-		$jsonIterator = new RecursiveIteratorIterator(
-			new RecursiveArrayIterator(json_decode($imported_data, TRUE)),
-			RecursiveIteratorIterator::SELF_FIRST);
+		//echo json_encode($consulta_usuarios_sql);
+
 		
-		foreach ($jsonIterator as $key => $val) {
-			if(is_array($val)) {
-				$registry = $key + 1;
-				echo "$registry:\n <br>";
-			} else {
-				echo "$key => $val\n <br>";
-			}
-		}
+
+		echo '[{ "IDLogin":"true" }]';
 	}
 }
