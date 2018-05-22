@@ -158,7 +158,8 @@ function listar_archivos_multilinea($carpeta){
                     if( '&' == substr($nombre_base, 0, 1) ){
                         $nombre_base = substr($nombre_base, 3);
                     }
-                    echo '<a class="small" href="'.$carpeta.'/'.$archivo.'">'.$nombre_base.'</a><br>'; 
+                    echo '<a class="small" href="https://docs.google.com/viewerng/viewer?url=http://codevelop.260mb.net/GDEM/media/'.$carpeta.'/'.$archivo.'">'.$nombre_base.'</a><br>'; 
+                    
                 }
             }
             
@@ -202,7 +203,7 @@ function listar_archivos($carpeta, $year){
                     if( '&' == substr($nombre_base, 0, 1) ){
                         $nombre_base = substr($nombre_base, 3);
                     }
-                    echo '<a href="'.$carpeta.'/'.$archivo.'">'.$nombre_base.'</a><br>'; 
+                    echo '<a class="small" href="https://docs.google.com/viewerng/viewer?url=http://codevelop.260mb.net/GDEM/media/'.$carpeta.'/'.$archivo.'">'.$nombre_base.'</a><br>';
                 }
             }
 		}
@@ -243,7 +244,7 @@ function listar_archivos_12($carpeta){
                     if( '&' == substr($nombre_base, 0, 1) ){
                         $nombre_base = substr($nombre_base, 3);
                     }
-                    echo '<a href="'.$carpeta.'/'.$archivo.'">'.$nombre_base.'</a><br>'; 
+                    echo '<a class="small" href="https://docs.google.com/viewerng/viewer?url=http://codevelop.260mb.net/GDEM/media/'.$carpeta.'/'.$archivo.'">'.$nombre_base.'</a><br>';
                 }
                 echo '</div>';
             }
