@@ -9,7 +9,17 @@
     }
     
     if($_SESSION['usr']==NULL){
-    echo'<div class="collapse bg-light" id="navbarHeader" style="">
+        if ($_SESSION['menu_status'])
+                {
+                    echo '
+                    <div class="collapse show bg-light" id="navbarHeader" style="">';
+                }
+        else
+                {
+                    echo '
+                    <div class="collapse bg-light" id="navbarHeader" style="">';
+                }
+    echo'
         <div class="container-fluid">
             <div class="row">
                 <div class="header_chart col-sm-8">

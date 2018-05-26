@@ -28,7 +28,12 @@
              <section class="container" id="languajes" >
                  <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
                     <?php 
+                        
+                     if (isset($_SESSION['usr'])){
                         include "../objetos/Perfil_G.php";
+                     }
+                     else {echo '<p class="display-4 text-center">Inicia sesion para acceder a este menú.</p><a href="#" id="loginButton" class="btn btn-primary btn-m active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
+                            <a href="GDEM/pages/formulario.php" class="btn m-4 btn-secondary btn-m active" role="button" aria-pressed="true">Registrarse / Create account </a>  ';}
                     ?>
                  </div>
             </section>
