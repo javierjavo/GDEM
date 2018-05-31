@@ -128,7 +128,7 @@
                                                     <a class="menuOp" href="">Calendario</a>
                                                     <a class="menuOp" href="/GDEM/pages/tools/Maker.php">Examenes cognitivos</a>
                                                     <a class="menuOp" href="">Escuelas cercanas</a>
-                                                    <a class="menuOp" href="">Favoritos</a>
+                                                    <a class="menuOp" href="/GDEM/pages/favoritos.php">Favoritos</a>
                                                     <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
                         ';
                 }
