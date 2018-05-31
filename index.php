@@ -20,13 +20,13 @@
     <!-- Barra de navegación principal-->
     <nav class="navbar navbar-light bg-light">
         <div class="col-sm-3 py-4">
-            <img class="img-fluid" src="media/sep.png" alt="Logo_GDEM">
+            <img class="img-fluid" src="media/jalisco.png" alt="Logo_GDEM">
         </div>
-       <div class="col-sm-3 py-4">
-            <img class="img-fluid" src="media/jalisco.jpg" alt="Logo_GDEM">
-        </div>
-       <div class="col-sm-3 py-4">
+       <div class="col-sm-2 py-4">
             <img class="img-fluid" src="media/Logo_probem.png" alt="Logo_GDEM">
+        </div>
+       <div class="col-sm-3 py-4">
+            <img class="img-fluid" src="media/jaliscogob.png" alt="Logo_GDEM">
         </div>
        <div class="col-sm-2 text-cen">
            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">

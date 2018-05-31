@@ -27,22 +27,20 @@
                         <div class="col-sm-6">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img class="img-fluid" src="'.$homeRute.'/media/Logo_probem.png" alt="Logo_GDEM">
+                                
                                 </div>
                                 <div class="col-sm-6"> 
-                                    <h3 class="text-center">PROBEMJal</h3>
-                                    <p class="text-center">Programa Binacional de Educación Migrante/ Binational Program for Migrant Education</p>  
+                                     
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-5 mr-4"> 
                             <div class="row">
                                 <div class="col-sm-6 py-4">
-                                    <img class="img-fluid header_logoGDEM" src="'.$homeRute.'/media/GDEM2.png" alt="Logo_GDEM">
+                                    
                                 </div>
                                 <div class="col-sm-6"> 
-                                    <h3 class="text-center">GDEM</h3>
-                                    <p class="text-center">Guia Digital de Educación al Migrante / National Digital Guide for Migrants</p>  
+                                      
                                 </div>
                             </div>
                         </div>

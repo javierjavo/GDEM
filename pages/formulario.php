@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
 <?php
     include "../servicios/lenguaje.php";
     initStyles();
