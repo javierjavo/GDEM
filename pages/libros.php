@@ -27,11 +27,16 @@
         <main class="contenido" role="main">
              <section class="container" id="languajes" >
                  <div class="row align-items-center justify-content-center bg-light"  style="min-height: 675px;">
-                   <p class="display-4">Libros disponibles.</p>
+                   
                     <?php
                         session_start();
+                     if (isset($_SESSION['usr'])){
+                         echo'<p class="display-4">Libros disponibles.</p>';
                         include "../servicios/listar.php";
                         echo listar_archivos_multilinea("../media/Libros/".$_SESSION['lang']);
+                     }
+                     else {echo '<p class="display-4 text-center">Inicia sesion para ver los materiales.</p><a href="#" id="loginButton" class="btn btn-primary btn-m active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>
+                            <a href="GDEM/pages/formulario.php" class="btn m-4 btn-secondary btn-m active" role="button" aria-pressed="true">Registrarse / Create account </a>  ';}
                     ?>
                  </div>
             </section>

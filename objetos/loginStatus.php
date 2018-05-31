@@ -9,7 +9,17 @@
     }
     
     if($_SESSION['usr']==NULL){
-    echo'<div class="collapse bg-light" id="navbarHeader" style="">
+        if ($_SESSION['menu_status'])
+                {
+                    echo '
+                    <div class="collapse show bg-light" id="navbarHeader" style="">';
+                }
+        else
+                {
+                    echo '
+                    <div class="collapse bg-light" id="navbarHeader" style="">';
+                }
+    echo'
         <div class="container-fluid">
             <div class="row">
                 <div class="header_chart col-sm-8">
@@ -116,9 +126,9 @@
                                                 <div class="navbar m-0 p-0 justify-content-center">
                                                     <a class="menuOp" href="/GDEM/pages/perfil.php">Mi Perfil</a>
                                                     <a class="menuOp" href="">Calendario</a>
-                                                    <a class="menuOp" href="">Examenes cognitivos</a>
+                                                    <a class="menuOp" href="/GDEM/pages/tools/Maker.php">Examenes cognitivos</a>
                                                     <a class="menuOp" href="">Escuelas cercanas</a>
-                                                    <a class="menuOp" href="">Favoritos</a>
+                                                    <a class="menuOp" href="/GDEM/pages/favoritos.php">Favoritos</a>
                                                     <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
                         ';
                 }

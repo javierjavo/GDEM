@@ -17,6 +17,54 @@ $("#loginButton").click(function() {
     $("#fondoFormLogin").parent().addClass( "fondoFormLoginin"); 
 }); 
 
+$( "#fondoFormLogin2" ).click(function() { 
+    $(this).parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().addClass( "fondoFormLoginout");
+}); 
+ 
+$("#cancelFormLogin2").click(function() { 
+    $(this).parent().parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().parent().addClass( "fondoFormLoginout"); 
+}); 
+ 
+$("#loginButton2").click(function() { 
+    $("#fondoFormLogin2").parent().removeClass("inicioIinvisible"); 
+    $("#fondoFormLogin2").parent().removeClass( "fondoFormLoginout"); 
+    $("#fondoFormLogin2").parent().addClass( "fondoFormLoginin"); 
+}); 
+
+$( "#fondoFormLogin3" ).click(function() { 
+    $(this).parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().addClass( "fondoFormLoginout");
+}); 
+ 
+$("#cancelFormLogin3").click(function() { 
+    $(this).parent().parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().parent().addClass( "fondoFormLoginout"); 
+}); 
+ 
+$("#loginButton3").click(function() { 
+    $("#fondoFormLogin3").parent().removeClass("inicioIinvisible"); 
+    $("#fondoFormLogin3").parent().removeClass( "fondoFormLoginout"); 
+    $("#fondoFormLogin3").parent().addClass( "fondoFormLoginin"); 
+}); 
+
+$( "#fondoFormLogin4" ).click(function() { 
+    $(this).parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().addClass( "fondoFormLoginout");
+}); 
+ 
+$("#cancelFormLogin4").click(function() { 
+    $(this).parent().parent().removeClass( "fondoFormLoginin"); 
+    $(this).parent().parent().addClass( "fondoFormLoginout"); 
+}); 
+ 
+$("#loginButton4").click(function() { 
+    $("#fondoFormLogin4").parent().removeClass("inicioIinvisible"); 
+    $("#fondoFormLogin4").parent().removeClass( "fondoFormLoginout"); 
+    $("#fondoFormLogin4").parent().addClass( "fondoFormLoginin"); 
+}); 
+
 $("#sendInformationLogin").click(function() { 
     $("#colectUserInfoName").val(); 
     $("#colectUserInfoPass").val(); 
