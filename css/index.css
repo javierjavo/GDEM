@@ -83,6 +83,11 @@
 .probem {
     width: 700px;
 }
+#map 
+{
+    height: 800px;
+    width: 100%;
+}
 .contacto {
     background-color: dimgrey;
 }

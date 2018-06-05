@@ -125,7 +125,7 @@
                                                 <div class="navbar m-0 p-0 justify-content-center">
                                                     <a class="menuOp" href="/GDEM/pages/perfil.php">Mi Perfil</a>
                                                     <a class="menuOp" href="/GDEM/pages/tools/Maker.php">Examenes cognitivos</a>
-                                                    <a class="menuOp" href="">Escuelas cercanas</a>
+                                                    <a class="menuOp" href="/GDEM/pages/escuelas.php">Escuelas cercanas</a>
                                                     <a class="menuOp" href="/GDEM/pages/favoritos.php">Favoritos</a>
                                                     <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
                         ';
