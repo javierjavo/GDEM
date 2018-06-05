@@ -73,9 +73,12 @@
                      if (isset($_SESSION['usr'])){
                          echo'
                          <div class="col-md-12">
-                         <p class="display-4">Examenes disponibles.</p><br>
-                        <a href="#" id="loginButton2" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Crear nuevo examen</a>
+                         <p class="display-4">Examenes disponibles.</p><br>';
+                         if ($_SESSION['usr_type'] == "admin")
+                         {
+                             echo '<a href="#" id="loginButton2" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Crear nuevo examen</a>
                         </div><br><br>';
+                         }
                         include "exam_list.php";
                      }
                      else {echo '<p class="display-4 text-center">Inicia sesion para ver los materiales.</p><a href="#" id="loginButton" class="btn btn-primary btn-m active" role="button" aria-pressed="true">Entrar a tu sesión / Login </a>

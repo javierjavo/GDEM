@@ -109,10 +109,11 @@
                     ';
                 if ($fila_actual[0] == 'admin')
                 {
+                    $_SESSION['usr_type'] = "admin";
                     echo'   
                                                 <div class="navbar m-0 p-0 justify-content-center">
                                                     <a class="menuOp" href="">Agregar eventos</a>
-                                                    <a class="menuOp" href="">Agregar examenes</a>
+                                                    <a class="menuOp" href="/GDEM/pages/tools/Maker.php">Agregar examenes</a>
                                                     <a class="menuOp" href="">Info escuelas</a>
                                                     <a class="menuOp" href="/GDEM/pages/libros.php">Materiales en linea</a>
                     ';
@@ -123,7 +124,6 @@
                         '
                                                 <div class="navbar m-0 p-0 justify-content-center">
                                                     <a class="menuOp" href="/GDEM/pages/perfil.php">Mi Perfil</a>
-                                                    <a class="menuOp" href="">Calendario</a>
                                                     <a class="menuOp" href="/GDEM/pages/tools/Maker.php">Examenes cognitivos</a>
                                                     <a class="menuOp" href="">Escuelas cercanas</a>
                                                     <a class="menuOp" href="/GDEM/pages/favoritos.php">Favoritos</a>
