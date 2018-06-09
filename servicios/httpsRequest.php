@@ -1,5 +1,5 @@
 <?php
-$urlRequest = $_GET['variableHtml'];
+$urlRequest = $_GET['url'];
 httpsRequest($urlRequest);
 
 function httpsRequest($url){
@@ -9,9 +9,8 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 echo $url;
     if ($response){
-        
-   header("Location:".$url);
-}
+   		header("Location:".$url);
+	}
     else{
         header("Location:".$_SERVER['HTTP_REFERER']);
     }
