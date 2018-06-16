@@ -14,7 +14,6 @@ class Welcome extends CI_Controller {
 		parent::__construct();
 	}
 	
-
 	private function json_read($in) {
 			$json = json_encode($in);//My JSON file here
 			$data_row = json_decode($json); //decode json feed
